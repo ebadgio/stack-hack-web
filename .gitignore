@@ -57,3 +57,11 @@ typings/
 # dotenv environment variables file
 .env
 
+.idea/checkstyle-idea.xml
+.idea/inspectionProfiles/
+.idea/modules.xml
+.idea/misc.xml
+.idea/stack-hack-web.iml
+.idea/vcs.xml
+.idea/workspace.xml
+package.json

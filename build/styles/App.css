@@ -1,0 +1,89 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    /*background: #fff;*/
+    position: fixed;
+    top:0;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+}
+
+.cover-photo-wrapper {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-photo {
+    width: 100%;
+}
+
+/*.nav-title {*/
+    /*font-size: 20px;*/
+    /*!*color: #fff;*!*/
+    /*!*color: #212121;*!*/
+    /*color: #424242;*/
+    /*font-weight: 900;*/
+/*}*/
+
+/*.nav-logo {*/
+    /*height: 35px;*/
+    /*width: 35px;*/
+    /*margin-right: 10px;*/
+/*}*/
+
+.cover-info-wrapper {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cover-info-logo {
+    height: 90px;
+    width: 90px;
+}
+
+.cover-info-title {
+    color: #212121;
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.heading {
+    color: #424242;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.heading-description {
+    color: #757575;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    max-width: 450px;
+    line-height: 30px;
+}
+
+.code-icon {
+    color: #82b1ff;
+    height: 150px;
+    width: 120px !important;
+}
