@@ -3,10 +3,10 @@ import React from 'react';
 const Cover = ({}) => {
 
     return (
-        <div style={{marginBottom: '80px', width: '100%'}}>
+        <div style={{marginBottom: '70px', width: '100%'}}>
             <div className="cover-photo-wrapper">
-                <img className="cover-photo"
-                     src="https://s3.amazonaws.com/stack-hack-tutoring/artem-sapegin-176819-unsplash.jpg"/>
+                {/*<img className="cover-photo"*/}
+                     {/*src="https://s3.amazonaws.com/stack-hack-tutoring/artem-sapegin-176819-unsplash.jpg"/>*/}
             </div>
             {/*<div className="cover-info-wrapper">*/}
                 {/*<img className="cover-info-logo" src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-4.svg"/>*/}

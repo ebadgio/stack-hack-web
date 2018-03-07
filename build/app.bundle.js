@@ -1209,13 +1209,8 @@ var Cover = function Cover(_ref) {
 
     return _react2.default.createElement(
         'div',
-        { style: { marginBottom: '80px', width: '100%' } },
-        _react2.default.createElement(
-            'div',
-            { className: 'cover-photo-wrapper' },
-            _react2.default.createElement('img', { className: 'cover-photo',
-                src: 'https://s3.amazonaws.com/stack-hack-tutoring/artem-sapegin-176819-unsplash.jpg' })
-        ),
+        { style: { marginBottom: '70px', width: '100%' } },
+        _react2.default.createElement('div', { className: 'cover-photo-wrapper' }),
         _react2.default.createElement(
             'div',
             { className: 'topic-page-cover-cont-shadow' },
@@ -1387,6 +1382,32 @@ var Overview = function Overview(_ref) {
         { className: "overview-wrapper" },
         _react2.default.createElement(
             "div",
+            { className: "heading" },
+            "Overview"
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "heading-description overview" },
+            "Stack Hack combines the personalized and flexible aspect of tutoring services with the structure and organization of a full computer science course. We begin with coding fundamentals and progress quickly onto more sophisticated concepts such as recursion, object-oriented programming, and graph theory. The language we will be working in is",
+            ' ',
+            _react2.default.createElement(
+                "a",
+                { href: "https://www.python.org/", target: "_blank" },
+                _react2.default.createElement(
+                    "strong",
+                    { id: "python" },
+                    "Python"
+                )
+            ),
+            " (see why below)."
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "heading", style: { marginTop: '60px' } },
+            "What You'll Get"
+        ),
+        _react2.default.createElement(
+            "div",
             { className: "overview-card-holder" },
             _react2.default.createElement(_Card2.default, { header: "ONE-ON-ONE",
                 icon: _react2.default.createElement(
@@ -1404,7 +1425,31 @@ var Overview = function Overview(_ref) {
                     _react2.default.createElement("i", { "class": "fas fa-mobile screen-icons" })
                 ),
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco." }),
-            _react2.default.createElement(_Card2.default, { header: "COMMUNITY", icon: _react2.default.createElement("i", { "class": "fab fa-slack slack-icon" }), description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam." })
+            _react2.default.createElement(_Card2.default, { header: "COMMUNITY", icon: _react2.default.createElement("i", { className: "fab fa-slack slack-icon" }), description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam." })
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "heading", style: { marginTop: '60px' } },
+            "Why Python?"
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "overview-python" },
+            _react2.default.createElement(
+                "div",
+                { id: "py-img-wrapper" },
+                _react2.default.createElement("img", { src: "https://s3.amazonaws.com/stack-hack-tutoring/python.png", id: "py-img" })
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "heading-description python" },
+                "Python is a powerful and versatile language that can be used for just about anything: data analysis, web servers, game development, machine learning, and more. In fact it's one of the official programming languages used at Google."
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "heading-description python" },
+                "Python is also the first programming language taught to students at many of the top computer science departments in the country such as Stanford University, MIT University, and Rice University. Python code reads very much like English, so students don't needlessly get bogged down in complicated syntax. This allows our learning to be focused on thinking in a computational way."
+            )
         )
     );
 };

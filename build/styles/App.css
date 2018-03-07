@@ -17,13 +17,24 @@
     align-items: center;
 }
 
+/*.cover-photo-wrapper {*/
+    /*width: 100%;*/
+    /*height: 470px;*/
+    /*overflow: hidden;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+/*}*/
+
 .cover-photo-wrapper {
-    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
     height: 470px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #bbdefb;
+    background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/artem-sapegin-176819-unsplash.jpg);
 }
 
 .cover-photo {
@@ -60,7 +71,7 @@
     justify-content: center;
     align-items: center;
     top: 0;
-    background: linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.4) 40%,rgba(0,0,0,.4) 70%,rgba(0,0,0,.5));
+    /*background: linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.4) 40%,rgba(0,0,0,.4) 70%,rgba(0,0,0,.5));*/
 }
 
 .cover-info-logo {
@@ -114,6 +125,7 @@
     flex-direction: column;
     width: 100%;
     margin-bottom: 60px;
+    align-items: center;
 }
 
 .overview-card-holder {
@@ -181,9 +193,48 @@
     margin-right: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
+#python {
+    color: #757575;
+    transition: color .35s ease;
+}
 
-/*.overview {*/
-    /*width: fit-content;*/
-    /*margin-left: ;*/
-/*}*/
+#python:hover {
+    color: #3D5AFE;
+}
+
+.overview {
+    max-width: 70%;
+    color: #757575;
+}
+
+.python {
+    text-align: left !important;
+}
+
+#py-img-wrapper {
+    width: 100px;
+    height: 100px;
+    -webkit-box-shadow: 0 1px 12px rgba(0,0,0,.10);
+    box-shadow: 0 1px 12px rgba(0,0,0,.10);
+    border-radius: 6px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#py-img {
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.overview-python {
+    max-width: 800px;
+}
