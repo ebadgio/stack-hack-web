@@ -6,6 +6,9 @@ import Navbar from "./Navbar";
 import Cover from "./Cover";
 import Overview from "./Overview";
 import Syllabus from "./Syllabus";
+import Pricing from "./Pricing";
+import Team from "./Team";
+import Bottom from "./Bottom";
 
 
 class App extends React.Component {
@@ -22,6 +25,9 @@ class App extends React.Component {
                 <Cover />
                 <Overview />
                 <Syllabus/>
+                <Pricing />
+                <Team />
+                <Bottom />
             </div>
         );
     }

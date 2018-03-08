@@ -4,7 +4,7 @@ const Cover = ({}) => {
 
     return (
         <div style={{marginBottom: '70px', width: '100%'}}>
-            <div className="cover-photo-wrapper">
+            <div className="cover-photo-wrapper" id="landing">
                 {/*<img className="cover-photo"*/}
                      {/*src="https://s3.amazonaws.com/stack-hack-tutoring/artem-sapegin-176819-unsplash.jpg"/>*/}
             </div>

@@ -68,6 +68,21 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(40);
+} else {
+  module.exports = __webpack_require__(39);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -257,21 +272,6 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(36);
-} else {
-  module.exports = __webpack_require__(35);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -371,7 +371,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 4 */
@@ -492,7 +492,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = emptyObject;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 6 */
@@ -561,7 +561,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = warning;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 7 */
@@ -628,7 +628,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
 module.exports = checkPropTypes;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 8 */
@@ -728,7 +728,7 @@ var EventListener = {
 };
 
 module.exports = EventListener;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 10 */
@@ -785,7 +785,7 @@ module.exports = ExecutionEnvironment;
  * 
  */
 
-var isTextNode = __webpack_require__(30);
+var isTextNode = __webpack_require__(34);
 
 /*eslint-disable no-bitwise */
 
@@ -981,14 +981,14 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(32)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(36)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(31)();
+  module.exports = __webpack_require__(35)();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 16 */
@@ -1003,7 +1003,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1011,21 +1011,33 @@ var _propTypes = __webpack_require__(15);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Navbar = __webpack_require__(21);
+var _Navbar = __webpack_require__(22);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
-var _Cover = __webpack_require__(20);
+var _Cover = __webpack_require__(21);
 
 var _Cover2 = _interopRequireDefault(_Cover);
 
-var _Overview = __webpack_require__(22);
+var _Overview = __webpack_require__(23);
 
 var _Overview2 = _interopRequireDefault(_Overview);
 
-var _Syllabus = __webpack_require__(24);
+var _Syllabus = __webpack_require__(27);
 
 var _Syllabus2 = _interopRequireDefault(_Syllabus);
+
+var _Pricing = __webpack_require__(24);
+
+var _Pricing2 = _interopRequireDefault(_Pricing);
+
+var _Team = __webpack_require__(28);
+
+var _Team2 = _interopRequireDefault(_Team);
+
+var _Bottom = __webpack_require__(19);
+
+var _Bottom2 = _interopRequireDefault(_Bottom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1059,7 +1071,10 @@ var App = function (_React$Component) {
                 _react2.default.createElement(_Navbar2.default, null),
                 _react2.default.createElement(_Cover2.default, null),
                 _react2.default.createElement(_Overview2.default, null),
-                _react2.default.createElement(_Syllabus2.default, null)
+                _react2.default.createElement(_Syllabus2.default, null),
+                _react2.default.createElement(_Pricing2.default, null),
+                _react2.default.createElement(_Team2.default, null),
+                _react2.default.createElement(_Bottom2.default, null)
             );
         }
     }]);
@@ -1110,12 +1125,12 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(34);
+  module.exports = __webpack_require__(38);
 } else {
-  module.exports = __webpack_require__(33);
+  module.exports = __webpack_require__(37);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 18 */
@@ -1124,7 +1139,7 @@ if (process.env.NODE_ENV === 'production') {
 "use strict";
 
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1151,7 +1166,39 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
+
+var Bottom = function Bottom(_ref) {
+    _objectDestructuringEmpty(_ref);
+
+    return _react2.default.createElement(
+        'div',
+        { style: { width: '100%' } },
+        _react2.default.createElement('div', { className: 'cover-photo-wrapper', id: 'exit' }),
+        _react2.default.createElement('div', { id: 'bottom-block' })
+    );
+};
+
+exports.default = Bottom;
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1187,7 +1234,7 @@ var Card = function Card(_ref) {
 exports.default = Card;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1197,7 +1244,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1211,7 +1258,7 @@ var Cover = function Cover(_ref) {
     return _react2.default.createElement(
         'div',
         { style: { marginBottom: '70px', width: '100%' } },
-        _react2.default.createElement('div', { className: 'cover-photo-wrapper' }),
+        _react2.default.createElement('div', { className: 'cover-photo-wrapper', id: 'landing' }),
         _react2.default.createElement(
             'div',
             { className: 'topic-page-cover-cont-shadow' },
@@ -1236,7 +1283,7 @@ var Cover = function Cover(_ref) {
 exports.default = Cover;
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1248,7 +1295,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1307,7 +1354,7 @@ Navbar.propTypes = {};
 exports.default = Navbar;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1317,11 +1364,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Card = __webpack_require__(19);
+var _Card = __webpack_require__(20);
 
 var _Card2 = _interopRequireDefault(_Card);
 
@@ -1392,7 +1439,7 @@ var Overview = function Overview(_ref) {
             { className: "overview-python flex-col" },
             _react2.default.createElement(
                 "div",
-                { className: "row" },
+                { style: { marginBottom: '30px' } },
                 _react2.default.createElement(
                     "div",
                     { className: "frame shadow", id: "py-img-wrapper" },
@@ -1412,7 +1459,7 @@ var Overview = function Overview(_ref) {
             ),
             _react2.default.createElement(
                 "div",
-                { className: "row" },
+                { className: "flex-row" },
                 _react2.default.createElement(
                     "div",
                     { className: "heading-description python" },
@@ -1444,7 +1491,7 @@ var Overview = function Overview(_ref) {
                     _react2.default.createElement(
                         "strong",
                         null,
-                        "learning to think and reason in a computational way."
+                        " learning to think and reason in a computational way."
                     )
                 )
             ),
@@ -1522,7 +1569,7 @@ var Overview = function Overview(_ref) {
             _react2.default.createElement(
                 "div",
                 { className: "text-caption", style: { maxWidth: '320px' } },
-                "Above is an example of some very basic Python code. It takes in a list of a numbers, and returns a list those numbers squared:",
+                "Above is an example of some very basic Python code. It takes in a list of a numbers, and returns a list of those numbers squared:",
                 _react2.default.createElement("br", null),
                 "[ 1, 2, 3, 4, 5] -> [1, 4, 9, 16, 25]",
                 _react2.default.createElement("br", null),
@@ -1535,7 +1582,7 @@ var Overview = function Overview(_ref) {
 exports.default = Overview;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1545,7 +1592,217 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
+
+var Pricing = function Pricing(_ref) {
+    _objectDestructuringEmpty(_ref);
+
+    return _react2.default.createElement(
+        "div",
+        { className: "section-wrapper flex-col" },
+        _react2.default.createElement(
+            "div",
+            { className: "heading" },
+            "Pricing"
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "flex-row" },
+            _react2.default.createElement(
+                "div",
+                { className: "price-wrap shadow" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "heading-description overview", style: { maxWidth: '100%' } },
+                    _react2.default.createElement(
+                        "strong",
+                        { style: { fontSize: '24px', color: '#424242' } },
+                        "Core Track"
+                    ),
+                    _react2.default.createElement("br", null),
+                    _react2.default.createElement("br", null),
+                    _react2.default.createElement(
+                        "strong",
+                        null,
+                        "Price"
+                    ),
+                    ": $600",
+                    _react2.default.createElement("br", null),
+                    _react2.default.createElement("br", null),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "left" },
+                        "You get:"
+                    ),
+                    _react2.default.createElement(
+                        "ul",
+                        { className: "left" },
+                        _react2.default.createElement(
+                            "li",
+                            null,
+                            "The 10 sessions detailed above"
+                        ),
+                        _react2.default.createElement(
+                            "li",
+                            null,
+                            "One-on-one tutor style learning for each session"
+                        ),
+                        _react2.default.createElement(
+                            "li",
+                            null,
+                            "Our instructional videos and comprehensive exercises"
+                        ),
+                        _react2.default.createElement(
+                            "li",
+                            null,
+                            "Access to our Slack community of instructors and students for sharing resources, getting help, and conitnued learning"
+                        )
+                    )
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "price-wrap shadow" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "heading-description overview", style: { maxWidth: '100%' } },
+                    _react2.default.createElement(
+                        "strong",
+                        { style: { fontSize: '24px', color: '#424242' } },
+                        "Advanced Track"
+                    ),
+                    _react2.default.createElement("br", null),
+                    _react2.default.createElement("br", null),
+                    _react2.default.createElement(
+                        "strong",
+                        null,
+                        "Price"
+                    ),
+                    ": $800",
+                    _react2.default.createElement("br", null),
+                    _react2.default.createElement("br", null),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "left" },
+                        "You get everything in Core ",
+                        _react2.default.createElement(
+                            "strong",
+                            null,
+                            "+"
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "ul",
+                        { className: "left" },
+                        _react2.default.createElement(
+                            "li",
+                            null,
+                            "Lorem ipsum"
+                        ),
+                        _react2.default.createElement(
+                            "li",
+                            null,
+                            "Lorem ipsum Lorem ipsum"
+                        ),
+                        _react2.default.createElement(
+                            "li",
+                            null,
+                            "Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum"
+                        ),
+                        _react2.default.createElement(
+                            "li",
+                            null,
+                            "Lorem ipsumLorem ipsum"
+                        )
+                    )
+                )
+            )
+        )
+    );
+};
+
+exports.default = Pricing;
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Profile = function Profile(_ref) {
+    var image = _ref.image,
+        name = _ref.name,
+        description = _ref.description,
+        college = _ref.college,
+        job = _ref.job;
+
+
+    return _react2.default.createElement(
+        "div",
+        { className: "profile-card flex-col" },
+        _react2.default.createElement(
+            "div",
+            { className: "row" },
+            _react2.default.createElement("div", { className: "avatar-wrapper", style: { backgroundImage: 'url(' + image + ')' } }),
+            _react2.default.createElement(
+                "div",
+                { className: "info-group" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "profile-card-name" },
+                    _react2.default.createElement(
+                        "strong",
+                        null,
+                        name
+                    )
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "profile-card-college" },
+                    college
+                ),
+                job ? job : ''
+            )
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "profile-card-blurb" },
+            description
+        )
+    );
+};
+
+exports.default = Profile;
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1585,7 +1842,7 @@ var SessionItem = function SessionItem(_ref) {
 exports.default = SessionItem;
 
 /***/ }),
-/* 24 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1595,11 +1852,11 @@ Object.defineProperty(exports, "__esModule", {
              value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _SessionItem = __webpack_require__(23);
+var _SessionItem = __webpack_require__(26);
 
 var _SessionItem2 = _interopRequireDefault(_SessionItem);
 
@@ -1740,7 +1997,68 @@ var Syllabus = function Syllabus(_ref) {
 exports.default = Syllabus;
 
 /***/ }),
-/* 25 */
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Profile = __webpack_require__(25);
+
+var _Profile2 = _interopRequireDefault(_Profile);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
+
+var Team = function Team(_ref) {
+    _objectDestructuringEmpty(_ref);
+
+    return _react2.default.createElement(
+        "div",
+        { className: "section-wrapper" },
+        _react2.default.createElement(
+            "div",
+            { className: "heading" },
+            "Team"
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "flex-row" },
+            _react2.default.createElement(_Profile2.default, { image: "https://s3.amazonaws.com/stack-hack-tutoring/eli-2.jpg",
+                job: _react2.default.createElement(
+                    "div",
+                    null,
+                    "Software Engineering Intern at ",
+                    _react2.default.createElement(
+                        "a",
+                        { href: "https://www.sap.com/", target: "_blank" },
+                        "SAP"
+                    )
+                ),
+                name: "Eli Badgio",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                college: "Rice University" }),
+            _react2.default.createElement(_Profile2.default, { image: "",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                name: "Simon Sheintoch",
+                college: "University of Michigan" })
+        )
+    );
+};
+
+exports.default = Team;
+
+/***/ }),
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1775,7 +2093,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 26 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1790,7 +2108,7 @@ module.exports = camelize;
 
 
 
-var camelize = __webpack_require__(25);
+var camelize = __webpack_require__(29);
 
 var msPattern = /^-ms-/;
 
@@ -1818,7 +2136,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 27 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1854,7 +2172,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 28 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1869,7 +2187,7 @@ module.exports = hyphenate;
 
 
 
-var hyphenate = __webpack_require__(27);
+var hyphenate = __webpack_require__(31);
 
 var msPattern = /^ms-/;
 
@@ -1896,7 +2214,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 29 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1924,7 +2242,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 30 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1939,7 +2257,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(29);
+var isNode = __webpack_require__(33);
 
 /**
  * @param {*} object The object to check.
@@ -1952,7 +2270,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 31 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2017,7 +2335,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 32 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2564,10 +2882,10 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
   return ReactPropTypes;
 };
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 33 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2588,7 +2906,7 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(1);
+var React = __webpack_require__(0);
 var invariant = __webpack_require__(3);
 var warning = __webpack_require__(6);
 var ExecutionEnvironment = __webpack_require__(10);
@@ -2601,8 +2919,8 @@ var containsNode = __webpack_require__(11);
 var focusNode = __webpack_require__(12);
 var emptyObject = __webpack_require__(5);
 var checkPropTypes = __webpack_require__(7);
-var hyphenateStyleName = __webpack_require__(28);
-var camelizeStyleName = __webpack_require__(26);
+var hyphenateStyleName = __webpack_require__(32);
+var camelizeStyleName = __webpack_require__(30);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -17966,10 +18284,10 @@ module.exports = reactDom;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 34 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17985,7 +18303,7 @@ module.exports = reactDom;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),l=__webpack_require__(10),B=__webpack_require__(4),C=__webpack_require__(2),ba=__webpack_require__(9),da=__webpack_require__(13),ea=__webpack_require__(14),fa=__webpack_require__(11),ia=__webpack_require__(12),D=__webpack_require__(5);
+var aa=__webpack_require__(0),l=__webpack_require__(10),B=__webpack_require__(4),C=__webpack_require__(2),ba=__webpack_require__(9),da=__webpack_require__(13),ea=__webpack_require__(14),fa=__webpack_require__(11),ia=__webpack_require__(12),D=__webpack_require__(5);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -18205,7 +18523,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 35 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19567,10 +19885,10 @@ module.exports = react;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 36 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

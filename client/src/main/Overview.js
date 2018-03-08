@@ -33,19 +33,19 @@ const Overview = ({}) => {
             </div>
             <div className="heading" style={{marginTop: '60px'}}>Why Python?</div>
             <div className="overview-python flex-col">
-                <div className="row">
+                <div style={{marginBottom: '30px'}}>
                     <div className="frame shadow" id="py-img-wrapper"><img src="https://s3.amazonaws.com/stack-hack-tutoring/python.png" id="py-img"/></div>
                     <div className="heading-description python">Python is a powerful and versatile language that can be used for just
                     about anything: data analysis, web servers, game development, machine learning, and more. In fact, it's one
                         of the official programming languages used at <i>Google</i>.</div>
                 </div>
-                <div className="row">
+                <div className="flex-row">
                     <div className="heading-description python">Python is also the first programming language
                         taught to computer science students at many of the top universities in the country such
                         as <i>Stanford University</i>, <i>MIT University</i>, <i>Carnegie Mellon</i>, <i>Rice University</i>, and many more. This is because the
                         Python code reads very much like English, so
                         students don't needlessly get bogged down in complicated syntax, which allows the focus to be on
-                        <strong>learning to think and reason in a computational way.</strong></div>
+                        <strong> learning to think and reason in a computational way.</strong></div>
                 </div>
                 <div className="frame code-wrap shadow">
                     <code>
@@ -63,8 +63,8 @@ const Overview = ({}) => {
                     </code>
                 </div>
                 <div className="text-caption" style={{maxWidth: '320px'}}>
-                    Above is an example of some very basic Python code. It takes in a list of a numbers, and returns a list those numbers
-                    squared:
+                    Above is an example of some very basic Python code. It takes in a list of a numbers, and returns a
+                    list of those numbers squared:
                     <br/>
                     [ 1, 2, 3, 4, 5] -> [1, 4, 9, 16, 25]
                     <br/>
