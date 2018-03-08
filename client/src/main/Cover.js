@@ -17,7 +17,7 @@ const Cover = ({}) => {
                     {/*<img className="cover-info-logo" src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-4.svg"/>*/}
                     <div className="cover-info-title">Decode the Code with Stack Hack</div>
                     <div className="heading-description">
-                        A guided introduction to computer science with a focus on computational thinking.
+                        A guided introduction to the world of computer science
                     </div>
                 </div>
             </div>

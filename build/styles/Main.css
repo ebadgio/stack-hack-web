@@ -1,9 +1,4 @@
-.main-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 .navbar {
@@ -61,6 +56,7 @@
     align-items: center;
     flex-direction: column;
     max-width: 550px;
+    padding: 0 20px;
 }
 
 .topic-page-cover-cont-shadow {
@@ -104,12 +100,6 @@
     line-height: 30px;
 }
 
-.code-icon {
-    color: #82b1ff;
-    height: 150px;
-    width: 120px !important;
-}
-
 
 .intro-wrapper {
     display: flex;
@@ -120,20 +110,22 @@
     width: 100%;
 }
 
-.overview-wrapper {
-    display: flex;
-    flex-direction: column;
+.section-wrapper {
     width: 100%;
     margin-bottom: 60px;
-    align-items: center;
 }
 
-.overview-card-holder {
+.flex-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 1px 7px rgba(0,0,0,.10);
+    box-shadow: 0 1px 7px rgba(0,0,0,.10);
 }
 
 .card-outer {
@@ -147,8 +139,6 @@
     flex-direction: column;
     align-items: center;
     margin: 20px auto;
-    -webkit-box-shadow: 0 1px 7px rgba(0,0,0,.10);
-    box-shadow: 0 1px 7px rgba(0,0,0,.10);
 }
 
 .card-heading {
@@ -176,16 +166,19 @@
 .user-icons {
     height: 50px;
     width: 50px !important;
+    color: #00b0ff;
 }
 
 .screen-icons {
     height: 50px;
     width: 50px !important;
+    color: #1de9b6;
 }
 
 .slack-icon {
     height: 70px;
     width: 70px !important;
+    color: #3D5AFE;
 }
 
 .offset {
@@ -214,27 +207,174 @@ a {
 
 .python {
     text-align: left !important;
+    color: #757575;
 }
 
 #py-img-wrapper {
-    width: 100px;
-    height: 100px;
-    -webkit-box-shadow: 0 1px 12px rgba(0,0,0,.10);
-    box-shadow: 0 1px 12px rgba(0,0,0,.10);
+    width: 140px;
+    height: 140px;
+    /*-webkit-box-shadow: 0 1px 12px rgba(0,0,0,.10);*/
+    /*box-shadow: 0 1px 12px rgba(0,0,0,.10);*/
     border-radius: 6px;
     background: #fff;
+    margin-right: 20px;
+    float: left;
+}
+
+#py-img {
+    height: 120px;
+    width: 120px;
+
+}
+
+.code-wrap {
+    height: 160px;
+    width: 300px;
+    background: #fff;
+    border-radius: 6px;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.overview-python {
+    max-width: 800px;
+    padding: 0 30px 0 30px;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+.e-green {
+    color: #00e676;
+}
+
+.e-blue {
+    color: #00B0FF;
+}
+
+.e-orange {
+    color: #ff9800;
+}
+
+.e-purple {
+    color: #aa00ff;
+}
+
+.e-red {
+    color:#ff1744;
+
+}
+
+.frame {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#py-img {
-    height: 80px;
-    width: 80px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.overview-python {
-    max-width: 800px;
+.text-caption {
+    /*color: #bdbdbd;*/
+    color: #9e9e9e;
+    font-style: italic;
+    text-align: center;
+    line-height: 22px;
 }
+
+.item-wrapper {
+    border-radius: 50%;
+    /*border: 1px solid #dee0e3;*/
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+.item-title {
+    font-size: 20px;
+    /*color: #424242;*/
+    /*color: #8c9eff;*/
+    /*color:#7c4dff*/
+    color: #536dfe;
+    /* color: #00b0ff; */
+    /* color: #3D5AFE; */
+    /* color: #8C9EFF; */
+    font-weight: 700;
+    text-align: center;
+    /*margin-bottom: 15px;*/
+}
+
+.item-description {
+    font-size: 16px;
+    color: #9e9e9e;
+    text-align: center;
+}
+
+.item-label {
+    font-size: 22px;
+    color: #424242;
+    text-align: center;
+    position: absolute;
+    margin-top: -80px;
+}
+
+.top {
+    margin-top: 5%;
+}
+
+/*#s1 {*/
+    /*height: 200px;*/
+    /*width: 200px;*/
+/*}*/
+
+/*#s2 {*/
+    /*height: 220px;*/
+    /*width: 220px;*/
+/*}*/
+
+/*#s3 {*/
+    /*height: 180px;*/
+    /*width: 180px;*/
+/*}*/
+
+/*#s4 {*/
+    /*height: 170px;*/
+    /*width: 170px;*/
+/*}*/
+
+/*#s5 {*/
+    /*height: 180px;*/
+    /*width: 180px;*/
+/*}*/
+
+/*#s6 {*/
+    /*height: 190px;*/
+    /*width: 190px;*/
+/*}*/
+
+/*#s7 {*/
+    /*height: 100px;*/
+    /*width: 100px;*/
+/*}*/
+
+/*#s8 {*/
+    /*height: 250px;*/
+    /*width: 250px;*/
+/*}*/
+
+/*#s9 {*/
+    /*height: 140px;*/
+    /*width: 140px;*/
+/*}*/
+
+/*#s10 {*/
+    /*height: 160px;*/
+    /*width: 160px;*/
+/*}*/

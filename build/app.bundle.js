@@ -264,9 +264,9 @@ process.umask = function() { return 0; };
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(35);
+  module.exports = __webpack_require__(36);
 } else {
-  module.exports = __webpack_require__(34);
+  module.exports = __webpack_require__(35);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -785,7 +785,7 @@ module.exports = ExecutionEnvironment;
  * 
  */
 
-var isTextNode = __webpack_require__(29);
+var isTextNode = __webpack_require__(30);
 
 /*eslint-disable no-bitwise */
 
@@ -981,11 +981,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(31)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(32)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(30)();
+  module.exports = __webpack_require__(31)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -1011,7 +1011,7 @@ var _propTypes = __webpack_require__(15);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Navbar = __webpack_require__(22);
+var _Navbar = __webpack_require__(21);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
@@ -1019,13 +1019,13 @@ var _Cover = __webpack_require__(20);
 
 var _Cover2 = _interopRequireDefault(_Cover);
 
-var _Intro = __webpack_require__(21);
-
-var _Intro2 = _interopRequireDefault(_Intro);
-
-var _Overview = __webpack_require__(23);
+var _Overview = __webpack_require__(22);
 
 var _Overview2 = _interopRequireDefault(_Overview);
+
+var _Syllabus = __webpack_require__(24);
+
+var _Syllabus2 = _interopRequireDefault(_Syllabus);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1055,10 +1055,11 @@ var App = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'main-wrapper' },
+                { className: 'flex-col' },
                 _react2.default.createElement(_Navbar2.default, null),
                 _react2.default.createElement(_Cover2.default, null),
-                _react2.default.createElement(_Overview2.default, null)
+                _react2.default.createElement(_Overview2.default, null),
+                _react2.default.createElement(_Syllabus2.default, null)
             );
         }
     }]);
@@ -1109,9 +1110,9 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(33);
+  module.exports = __webpack_require__(34);
 } else {
-  module.exports = __webpack_require__(32);
+  module.exports = __webpack_require__(33);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -1164,7 +1165,7 @@ var Card = function Card(_ref) {
 
     return _react2.default.createElement(
         "div",
-        { className: "card-outer" },
+        { className: "card-outer shadow" },
         _react2.default.createElement(
             "div",
             { className: "card-icon-wrapper" },
@@ -1225,7 +1226,7 @@ var Cover = function Cover(_ref) {
                 _react2.default.createElement(
                     'div',
                     { className: 'heading-description' },
-                    'A guided introduction to computer science with a focus on computational thinking.'
+                    'A guided introduction to the world of computer science'
                 )
             )
         )
@@ -1236,52 +1237,6 @@ exports.default = Cover;
 
 /***/ }),
 /* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
-
-var Intro = function Intro(_ref) {
-    _objectDestructuringEmpty(_ref);
-
-    return _react2.default.createElement(
-        "div",
-        { className: "intro-wrapper" },
-        _react2.default.createElement("i", { className: "fas fa-code code-icon" }),
-        _react2.default.createElement(
-            "div",
-            { style: { display: 'flex', flexDirection: 'column', marginLeft: '20px', marginRight: '20px' } },
-            _react2.default.createElement(
-                "div",
-                { className: "heading" },
-                "Decode the Code"
-            ),
-            _react2.default.createElement(
-                "div",
-                { className: "heading-description" },
-                "We provide you with the foundation and skills to dive into the world of tech and take control of your future."
-            )
-        ),
-        _react2.default.createElement("i", { className: "fas fa-code code-icon" })
-    );
-};
-
-exports.default = Intro;
-
-/***/ }),
-/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1352,7 +1307,7 @@ Navbar.propTypes = {};
 exports.default = Navbar;
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1379,7 +1334,7 @@ var Overview = function Overview(_ref) {
 
     return _react2.default.createElement(
         "div",
-        { className: "overview-wrapper" },
+        { className: "section-wrapper flex-col" },
         _react2.default.createElement(
             "div",
             { className: "heading" },
@@ -1388,7 +1343,7 @@ var Overview = function Overview(_ref) {
         _react2.default.createElement(
             "div",
             { className: "heading-description overview" },
-            "Stack Hack combines the personalized and flexible aspect of tutoring services with the structure and organization of a full computer science course. We begin with coding fundamentals and progress quickly onto more sophisticated concepts such as recursion, object-oriented programming, and graph theory. The language we will be working in is",
+            "Stack Hack combines the personalized and flexible aspect of tutoring services with the structure and organization of a full computer science course. We begin with the coding fundamentals and progress quickly onto more sophisticated concepts such as recursion, object-oriented programming, and graph theory. The language we will be working in is",
             ' ',
             _react2.default.createElement(
                 "a",
@@ -1408,7 +1363,7 @@ var Overview = function Overview(_ref) {
         ),
         _react2.default.createElement(
             "div",
-            { className: "overview-card-holder" },
+            { className: "flex-row" },
             _react2.default.createElement(_Card2.default, { header: "ONE-ON-ONE",
                 icon: _react2.default.createElement(
                     "div",
@@ -1434,21 +1389,144 @@ var Overview = function Overview(_ref) {
         ),
         _react2.default.createElement(
             "div",
-            { className: "overview-python" },
+            { className: "overview-python flex-col" },
             _react2.default.createElement(
                 "div",
-                { id: "py-img-wrapper" },
-                _react2.default.createElement("img", { src: "https://s3.amazonaws.com/stack-hack-tutoring/python.png", id: "py-img" })
+                { className: "row" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "frame shadow", id: "py-img-wrapper" },
+                    _react2.default.createElement("img", { src: "https://s3.amazonaws.com/stack-hack-tutoring/python.png", id: "py-img" })
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "heading-description python" },
+                    "Python is a powerful and versatile language that can be used for just about anything: data analysis, web servers, game development, machine learning, and more. In fact, it's one of the official programming languages used at ",
+                    _react2.default.createElement(
+                        "i",
+                        null,
+                        "Google"
+                    ),
+                    "."
+                )
             ),
             _react2.default.createElement(
                 "div",
-                { className: "heading-description python" },
-                "Python is a powerful and versatile language that can be used for just about anything: data analysis, web servers, game development, machine learning, and more. In fact it's one of the official programming languages used at Google."
+                { className: "row" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "heading-description python" },
+                    "Python is also the first programming language taught to computer science students at many of the top universities in the country such as ",
+                    _react2.default.createElement(
+                        "i",
+                        null,
+                        "Stanford University"
+                    ),
+                    ", ",
+                    _react2.default.createElement(
+                        "i",
+                        null,
+                        "MIT University"
+                    ),
+                    ", ",
+                    _react2.default.createElement(
+                        "i",
+                        null,
+                        "Carnegie Mellon"
+                    ),
+                    ", ",
+                    _react2.default.createElement(
+                        "i",
+                        null,
+                        "Rice University"
+                    ),
+                    ", and many more. This is because the Python code reads very much like English, so students don't needlessly get bogged down in complicated syntax, which allows the focus to be on",
+                    _react2.default.createElement(
+                        "strong",
+                        null,
+                        "learning to think and reason in a computational way."
+                    )
+                )
             ),
             _react2.default.createElement(
                 "div",
-                { className: "heading-description python" },
-                "Python is also the first programming language taught to students at many of the top computer science departments in the country such as Stanford University, MIT University, and Rice University. Python code reads very much like English, so students don't needlessly get bogged down in complicated syntax. This allows our learning to be focused on thinking in a computational way."
+                { className: "frame code-wrap shadow" },
+                _react2.default.createElement(
+                    "code",
+                    null,
+                    _react2.default.createElement(
+                        "i",
+                        { className: "e-blue" },
+                        "def"
+                    ),
+                    " ",
+                    _react2.default.createElement(
+                        "span",
+                        { className: "e-green" },
+                        "compute_squares"
+                    ),
+                    "(",
+                    _react2.default.createElement(
+                        "i",
+                        { className: "e-orange" },
+                        "numbers"
+                    ),
+                    "):",
+                    _react2.default.createElement("br", null),
+                    "\xA0\xA0\xA0\xA0result = []",
+                    _react2.default.createElement("br", null),
+                    "\xA0\xA0\xA0\xA0",
+                    _react2.default.createElement(
+                        "i",
+                        { className: "e-blue" },
+                        "for"
+                    ),
+                    " num ",
+                    _react2.default.createElement(
+                        "i",
+                        { className: "e-blue" },
+                        "in"
+                    ),
+                    " ",
+                    _react2.default.createElement(
+                        "i",
+                        { className: "e-orange" },
+                        "numbers"
+                    ),
+                    ":",
+                    _react2.default.createElement("br", null),
+                    "\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0squared = num ",
+                    _react2.default.createElement(
+                        "span",
+                        { className: "e-red" },
+                        "**"
+                    ),
+                    " ",
+                    _react2.default.createElement(
+                        "span",
+                        { className: "e-purple" },
+                        "2"
+                    ),
+                    _react2.default.createElement("br", null),
+                    "\xA0\xA0\xA0\xA0\xA0\xA0\xA0\xA0result.append(squared)",
+                    _react2.default.createElement("br", null),
+                    "\xA0\xA0\xA0\xA0",
+                    _react2.default.createElement(
+                        "i",
+                        { className: "e-blue" },
+                        "return"
+                    ),
+                    " result"
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "text-caption", style: { maxWidth: '320px' } },
+                "Above is an example of some very basic Python code. It takes in a list of a numbers, and returns a list those numbers squared:",
+                _react2.default.createElement("br", null),
+                "[ 1, 2, 3, 4, 5] -> [1, 4, 9, 16, 25]",
+                _react2.default.createElement("br", null),
+                "As you can see, the language is very readable."
             )
         )
     );
@@ -1457,7 +1535,212 @@ var Overview = function Overview(_ref) {
 exports.default = Overview;
 
 /***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SessionItem = function SessionItem(_ref) {
+    var top = _ref.top,
+        session = _ref.session,
+        title = _ref.title,
+        id = _ref.id,
+        description = _ref.description;
+
+    return _react2.default.createElement(
+        "div",
+        { id: id, className: "item-wrapper shadow frame" },
+        _react2.default.createElement(
+            "div",
+            { className: "item-label" },
+            _react2.default.createElement(
+                "strong",
+                null,
+                _react2.default.createElement(
+                    "u",
+                    null,
+                    session
+                )
+            )
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "item-title" },
+            title
+        )
+    );
+};
+
+exports.default = SessionItem;
+
+/***/ }),
 /* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+             value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _SessionItem = __webpack_require__(23);
+
+var _SessionItem2 = _interopRequireDefault(_SessionItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
+
+var Syllabus = function Syllabus(_ref) {
+             _objectDestructuringEmpty(_ref);
+
+             return _react2.default.createElement(
+                          "div",
+                          { className: "section-wrapper flex-col" },
+                          _react2.default.createElement(
+                                       "div",
+                                       { className: "heading" },
+                                       "Syllabus"
+                          ),
+                          _react2.default.createElement(
+                                       "div",
+                                       { className: "heading-description overview" },
+                                       _react2.default.createElement(
+                                                    "div",
+                                                    null,
+                                                    "We offer our two tracks. ",
+                                                    _react2.default.createElement(
+                                                                 "strong",
+                                                                 null,
+                                                                 "No prior coding knowledge/experience is required for either track."
+                                                    ),
+                                                    "\xA0However, the second more advanced track will move at a much faster pace during the last several sessions, and will cover more difficult concepts."
+                                       ),
+                                       _react2.default.createElement("br", null),
+                                       _react2.default.createElement("br", null),
+                                       _react2.default.createElement(
+                                                    "strong",
+                                                    null,
+                                                    _react2.default.createElement(
+                                                                 "u",
+                                                                 null,
+                                                                 "Track 1: Core Track"
+                                                    )
+                                       ),
+                                       _react2.default.createElement("br", null),
+                                       _react2.default.createElement(
+                                                    "div",
+                                                    null,
+                                                    "This track consists of 10 sessions detailed below. We cover the very basic and fundamental computer science concepts/structures during the first half. We then quickly transition into progressively more sophisticated and interesting concepts. This track is ideal for students who are looking to explore computer science and build a strong foundation to build on moving forward in their education."
+                                       )
+                          ),
+                          _react2.default.createElement(
+                                       "div",
+                                       { className: "flex-row", style: { maxWidth: '1000px' } },
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s1",
+                                                    session: "Session 1",
+                                                    title: "Fundamentals I: Functions, Expressions, Variables, Types",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s2",
+                                                    session: "Session 2",
+                                                    title: "Fundamentals II: Conditional Logic, Modular Arithmetic",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s3",
+                                                    session: "Session 3",
+                                                    title: "Fundamentals III: Strings, Lists, Tuples",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s4",
+                                                    session: "Session 4",
+                                                    title: "Fundamentals IIII: For-loops, While-loops",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s5",
+                                                    session: "Session 5",
+                                                    title: "Dictionaries, Sets, Nested Data Structures",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s6",
+                                                    session: "Session 6",
+                                                    title: "Sequence Methods, Lambdas, Random Variables",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s7",
+                                                    session: "Session 7",
+                                                    title: "Recursive Functions",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s8",
+                                                    session: "Session 8",
+                                                    title: "Graphs Theory I: Understanding Nodes and Edges, Adjacency Lists, Adjacency Matrices",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s9",
+                                                    session: "Session 9",
+                                                    title: "Object-oriented Programming",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s10",
+                                                    session: "Session 10",
+                                                    title: "Advanced Data structures, Sorting, Big-O",
+                                                    description: "" })
+                          ),
+                          _react2.default.createElement(
+                                       "div",
+                                       { className: "heading-description overview" },
+                                       _react2.default.createElement("br", null),
+                                       _react2.default.createElement("br", null),
+                                       _react2.default.createElement(
+                                                    "strong",
+                                                    null,
+                                                    _react2.default.createElement(
+                                                                 "u",
+                                                                 null,
+                                                                 "Track 2: Advanced Track"
+                                                    )
+                                       ),
+                                       _react2.default.createElement(
+                                                    "div",
+                                                    null,
+                                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                       )
+                          ),
+                          _react2.default.createElement(
+                                       "div",
+                                       { className: "flex-row", style: { maxWidth: '1000px' } },
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s11",
+                                                    session: "Session 11",
+                                                    title: "Graph Theory II: Graph Traversal Algorithms, Graph Properties and Phenomena",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s12",
+                                                    session: "Session 12",
+                                                    title: "Something Here",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s13",
+                                                    session: "Session 13",
+                                                    title: "And Another Bit Here",
+                                                    description: "" }),
+                                       _react2.default.createElement(_SessionItem2.default, { id: "s14",
+                                                    session: "Session 14",
+                                                    title: "With A Fourth",
+                                                    description: "" })
+                          )
+             );
+};
+
+exports.default = Syllabus;
+
+/***/ }),
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1492,7 +1775,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1507,7 +1790,7 @@ module.exports = camelize;
 
 
 
-var camelize = __webpack_require__(24);
+var camelize = __webpack_require__(25);
 
 var msPattern = /^-ms-/;
 
@@ -1535,7 +1818,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1571,7 +1854,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1586,7 +1869,7 @@ module.exports = hyphenate;
 
 
 
-var hyphenate = __webpack_require__(26);
+var hyphenate = __webpack_require__(27);
 
 var msPattern = /^ms-/;
 
@@ -1613,7 +1896,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1641,7 +1924,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1656,7 +1939,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(28);
+var isNode = __webpack_require__(29);
 
 /**
  * @param {*} object The object to check.
@@ -1669,7 +1952,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1734,7 +2017,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2284,7 +2567,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2318,8 +2601,8 @@ var containsNode = __webpack_require__(11);
 var focusNode = __webpack_require__(12);
 var emptyObject = __webpack_require__(5);
 var checkPropTypes = __webpack_require__(7);
-var hyphenateStyleName = __webpack_require__(27);
-var camelizeStyleName = __webpack_require__(25);
+var hyphenateStyleName = __webpack_require__(28);
+var camelizeStyleName = __webpack_require__(26);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -17686,7 +17969,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17922,7 +18205,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19287,7 +19570,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

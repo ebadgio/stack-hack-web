@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 // Components
 import Navbar from "./Navbar";
 import Cover from "./Cover";
-import Intro from "./Intro";
 import Overview from "./Overview";
+import Syllabus from "./Syllabus";
 
 
 class App extends React.Component {
@@ -17,11 +17,11 @@ class App extends React.Component {
 
     render() {
         return(
-            <div className="main-wrapper">
+            <div className="flex-col">
                 <Navbar />
                 <Cover />
-                {/*<Intro />*/}
                 <Overview />
+                <Syllabus/>
             </div>
         );
     }
