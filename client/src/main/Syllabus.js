@@ -15,7 +15,7 @@ const Syllabus = ({}) => {
                 </div>
                 <br/>
                 <br/>
-                <strong><u>Track 1: Core Track</u></strong>
+                <strong style={{color: '#424242'}}><u>Track 1: Core Track</u></strong>
                 <br/>
                 <div>
                     This track consists of 10 sessions detailed below. We cover the very basic and fundamental
@@ -70,7 +70,7 @@ const Syllabus = ({}) => {
             <div className="heading-description overview">
                 <br/>
                 <br/>
-                <strong><u>Track 2: Advanced Track</u></strong>
+                <strong style={{color: '#424242'}}><u>Track 2: Advanced Track</u></strong>
                 <div>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco

@@ -1397,7 +1397,7 @@ var Overview = function Overview(_ref) {
                 { href: "https://www.python.org/", target: "_blank" },
                 _react2.default.createElement(
                     "strong",
-                    { id: "python" },
+                    null,
                     "Python"
                 )
             ),
@@ -1893,7 +1893,7 @@ var Syllabus = function Syllabus(_ref) {
                                        _react2.default.createElement("br", null),
                                        _react2.default.createElement(
                                                     "strong",
-                                                    null,
+                                                    { style: { color: '#424242' } },
                                                     _react2.default.createElement(
                                                                  "u",
                                                                  null,
@@ -1958,7 +1958,7 @@ var Syllabus = function Syllabus(_ref) {
                                        _react2.default.createElement("br", null),
                                        _react2.default.createElement(
                                                     "strong",
-                                                    null,
+                                                    { style: { color: '#424242' } },
                                                     _react2.default.createElement(
                                                                  "u",
                                                                  null,

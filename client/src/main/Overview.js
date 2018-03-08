@@ -12,7 +12,7 @@ const Overview = ({}) => {
                 and progress quickly onto more sophisticated concepts such as recursion, object-oriented programming, and
                 graph theory. The language we will be working in is{' '}
                 <a href="https://www.python.org/" target="_blank">
-                    <strong id="python">Python</strong>
+                    <strong>Python</strong>
                 </a> (see why below).
             </div>
             <div className="heading" style={{marginTop: '60px'}}>What You'll Get</div>

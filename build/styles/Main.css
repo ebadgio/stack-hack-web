@@ -191,18 +191,14 @@
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#python {
-    color: #757575;
+    color: #00b0ff;
     transition: color .35s ease;
 }
 
-#python:hover {
+a:hover {
     color: #3D5AFE;
 }
+
 
 .overview {
     max-width: 70%;
