@@ -31,11 +31,21 @@
     filter: brightness(70%);
     height: 470px;
     background-color: #bbdefb;
+    object-fit: cover;
+    overflow: hidden;
 
 }
 
 #landing {
-    background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/artem-sapegin-176819-unsplash.jpg);
+    /*background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/artem-sapegin-176819-unsplash.jpg);*/
+    /*background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/emile-perron-190221-unsplash.jpg);*/
+    /* background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/patrick-lindenberg-191841-unsplash.jpg); */
+    /* background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/carl-heyerdahl-181868-unsplash.jpg); */
+}
+
+#landing-img {
+    width: 105%;
+    min-height: 470px;
 }
 
 .cover-photo {
