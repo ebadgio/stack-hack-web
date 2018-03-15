@@ -1270,7 +1270,7 @@ var Cover = function Cover(_ref) {
         _react2.default.createElement(
             'div',
             { className: 'cover-photo-wrapper', id: 'landing' },
-            _react2.default.createElement('img', { id: 'landing-img', src: 'https://s3.amazonaws.com/stack-hack-tutoring/emile-perron-190221-unsplash.jpg' })
+            _react2.default.createElement('img', { style: { display: 'none' }, src: 'https://s3.amazonaws.com/stack-hack-tutoring/emile-perron-190221-unsplash.jpg' })
         ),
         _react2.default.createElement(
             'div',
