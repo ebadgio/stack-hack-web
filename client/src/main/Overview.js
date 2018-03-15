@@ -26,7 +26,7 @@ const Overview = ({}) => {
                 <Card header="VIDEOS"
                       icon={<div>
                                 <i className="fas fa-laptop screen-icons offset" />
-                                <i class="fas fa-mobile screen-icons" />
+                                <i className="fas fa-mobile screen-icons" />
                             </div>}
                       description="We have instructional videos made for each topic, so that our students are able to obtain an introduction to the material before each session."/>
                 <Card header="COMMUNITY"
