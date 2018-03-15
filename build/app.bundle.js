@@ -1344,7 +1344,7 @@ var Navbar = function (_React$Component) {
                             display: 'flex',
                             alignItems: 'center' } },
                     _react2.default.createElement('img', { className: 'nav-logo',
-                        src: 'https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-4.svg' }),
+                        src: 'https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-7.svg' }),
                     _react2.default.createElement(
                         'span',
                         { className: 'nav-title' },
@@ -1681,7 +1681,7 @@ var Pricing = function Pricing(_ref) {
                         _react2.default.createElement(
                             "li",
                             null,
-                            "Our instructional videos and comprehensive exercises"
+                            "All of our instructional videos and comprehensive exercises"
                         ),
                         _react2.default.createElement(
                             "li",
@@ -1728,22 +1728,22 @@ var Pricing = function Pricing(_ref) {
                         _react2.default.createElement(
                             "li",
                             null,
-                            "Lorem ipsum"
+                            "4 more fast-paced sessions that cover high level concepts"
                         ),
                         _react2.default.createElement(
                             "li",
                             null,
-                            "Lorem ipsum Lorem ipsum"
+                            "Experience using Version Control Software (Git)"
                         ),
                         _react2.default.createElement(
                             "li",
                             null,
-                            "Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum"
+                            "Practical knowledge ack-end web development"
                         ),
                         _react2.default.createElement(
                             "li",
                             null,
-                            "Lorem ipsumLorem ipsum"
+                            "An introduction to front-end web development languages: HTML/CSS"
                         )
                     )
                 )

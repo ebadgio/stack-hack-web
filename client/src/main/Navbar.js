@@ -16,7 +16,7 @@ class Navbar extends React.Component {
                     display: 'flex',
                     alignItems: 'center'}}>
                     <img className="nav-logo"
-                         src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-4.svg" />
+                         src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-7.svg" />
                     <span className="nav-title">Stack Hack Tutoring</span>
                 </div>
             </div>

@@ -18,7 +18,7 @@ const Pricing = ({}) => {
                       <ul className="left">
                           <li>The 10 sessions detailed above</li>
                           <li>One-on-one tutor style learning for each session</li>
-                          <li>Our instructional videos and comprehensive exercises</li>
+                          <li>All of our instructional videos and comprehensive exercises</li>
                           <li>Access to our Slack community of instructors and students for sharing resources, getting help, and continued learning</li>
                       </ul>
 
@@ -34,10 +34,10 @@ const Pricing = ({}) => {
                       <br />
                       <div className="left">You get everything in Core <strong>+</strong></div>
                       <ul className="left">
-                          <li>Lorem ipsum</li>
-                          <li>Lorem ipsum Lorem ipsum</li>
-                          <li>Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum</li>
-                          <li>Lorem ipsumLorem ipsum</li>
+                          <li>4 more fast-paced sessions that cover high level concepts</li>
+                          <li>Experience using Version Control Software (Git)</li>
+                          <li>Practical knowledge ack-end web development</li>
+                          <li>An introduction to front-end web development languages: HTML/CSS</li>
                       </ul>
                   </div>
               </div>
