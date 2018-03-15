@@ -22,14 +22,16 @@ const Overview = ({}) => {
                                 <i className="fas fa-user user-icons offset" />
                                 <i className="far fa-user user-icons" />
                             </div>}
-                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                      description="Our tutor style teaching provides students with a one-on-one learning environment, which allows each student to move at their own pace and get the most out each and session and the course as a whole. "/>
                 <Card header="VIDEOS"
                       icon={<div>
                                 <i className="fas fa-laptop screen-icons offset" />
                                 <i class="fas fa-mobile screen-icons" />
                             </div>}
-                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."/>
-                <Card header="COMMUNITY" icon={<i className="fab fa-slack slack-icon"/>} description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."/>
+                      description="We have instructional videos made for each topic, so that our students are able to obtain an introduction to the material before each session."/>
+                <Card header="COMMUNITY"
+                      icon={<i className="fab fa-slack slack-icon"/>}
+                      description={<div>A key component of learning is to discuss, share, and continually refine what you have learned with your peers. To capture this aspect of learning we use a popular tool called <a href="https://slack.com/" target="_blank"><strong>Slack</strong></a> to gather all our students in one place and cultivate a strong community online.</div>}/>
             </div>
             <div className="heading" style={{marginTop: '60px'}}>Why Python?</div>
             <div className="overview-python flex-col">

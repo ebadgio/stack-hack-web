@@ -1181,6 +1181,15 @@ var Bottom = function Bottom(_ref) {
         'div',
         { style: { width: '100%' } },
         _react2.default.createElement('div', { className: 'cover-photo-wrapper', id: 'exit' }),
+        _react2.default.createElement(
+            'div',
+            { className: 'bottom-info-wrapper' },
+            _react2.default.createElement(
+                'div',
+                { className: 'cover-info-title' },
+                'Join Stack Hack today!'
+            )
+        ),
         _react2.default.createElement('div', { id: 'bottom-block' })
     );
 };
@@ -1418,7 +1427,7 @@ var Overview = function Overview(_ref) {
                     _react2.default.createElement("i", { className: "fas fa-user user-icons offset" }),
                     _react2.default.createElement("i", { className: "far fa-user user-icons" })
                 ),
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }),
+                description: "Our tutor style teaching provides students with a one-on-one learning environment, which allows each student to move at their own pace and get the most out each and session and the course as a whole. " }),
             _react2.default.createElement(_Card2.default, { header: "VIDEOS",
                 icon: _react2.default.createElement(
                     "div",
@@ -1426,8 +1435,24 @@ var Overview = function Overview(_ref) {
                     _react2.default.createElement("i", { className: "fas fa-laptop screen-icons offset" }),
                     _react2.default.createElement("i", { "class": "fas fa-mobile screen-icons" })
                 ),
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco." }),
-            _react2.default.createElement(_Card2.default, { header: "COMMUNITY", icon: _react2.default.createElement("i", { className: "fab fa-slack slack-icon" }), description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam." })
+                description: "We have instructional videos made for each topic, so that our students are able to obtain an introduction to the material before each session." }),
+            _react2.default.createElement(_Card2.default, { header: "COMMUNITY",
+                icon: _react2.default.createElement("i", { className: "fab fa-slack slack-icon" }),
+                description: _react2.default.createElement(
+                    "div",
+                    null,
+                    "A key component of learning is to discuss, share, and continually refine what you have learned with your peers. To capture this aspect of learning we use a popular tool called ",
+                    _react2.default.createElement(
+                        "a",
+                        { href: "https://slack.com/", target: "_blank" },
+                        _react2.default.createElement(
+                            "strong",
+                            null,
+                            "Slack"
+                        )
+                    ),
+                    " to gather all our students in one place and cultivate a strong community online."
+                ) })
         ),
         _react2.default.createElement(
             "div",
@@ -1661,7 +1686,7 @@ var Pricing = function Pricing(_ref) {
                         _react2.default.createElement(
                             "li",
                             null,
-                            "Access to our Slack community of instructors and students for sharing resources, getting help, and conitnued learning"
+                            "Access to our Slack community of instructors and students for sharing resources, getting help, and continued learning"
                         )
                     )
                 )
@@ -1881,7 +1906,7 @@ var Syllabus = function Syllabus(_ref) {
                                        _react2.default.createElement(
                                                     "div",
                                                     null,
-                                                    "We offer our two tracks. ",
+                                                    "We offer two course tracks. ",
                                                     _react2.default.createElement(
                                                                  "strong",
                                                                  null,
@@ -1904,7 +1929,7 @@ var Syllabus = function Syllabus(_ref) {
                                        _react2.default.createElement(
                                                     "div",
                                                     null,
-                                                    "This track consists of 10 sessions detailed below. We cover the very basic and fundamental computer science concepts/structures during the first half. We then quickly transition into progressively more sophisticated and interesting concepts. This track is ideal for students who are looking to explore computer science and build a strong foundation to build on moving forward in their education."
+                                                    "This track consists of 10 sessions detailed below. We cover the very basic and fundamental computer science concepts/structures during the first half. We then quickly transition into progressively more sophisticated and interesting concepts. This track is ideal for students who are looking to explore computer science and develop a strong foundation to build on moving forward in their education."
                                        )
                           ),
                           _react2.default.createElement(
@@ -1968,7 +1993,7 @@ var Syllabus = function Syllabus(_ref) {
                                        _react2.default.createElement(
                                                     "div",
                                                     null,
-                                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                                    "For the Advanced Track, we finish the 10 sessions from the Core Track described above, then move quickly into more challenging concepts, which are covered in an additional set of 4 sessions. The Advanced Track covers material equivalent to (and likely more than) the material taught in an intro-level Computer Science course at any given University. This track is perfect for high school students who are interested in attempting the Computer Science major when they attend college. It is also fitting for younger students who have a strong affinity for math and science subjects."
                                        )
                           ),
                           _react2.default.createElement(
@@ -1980,15 +2005,15 @@ var Syllabus = function Syllabus(_ref) {
                                                     description: "" }),
                                        _react2.default.createElement(_SessionItem2.default, { id: "s12",
                                                     session: "Session 12",
-                                                    title: "Something Here",
+                                                    title: "Text Parsing Using Regular Expressions",
                                                     description: "" }),
                                        _react2.default.createElement(_SessionItem2.default, { id: "s13",
                                                     session: "Session 13",
-                                                    title: "And Another Bit Here",
+                                                    title: "Web Servers I: Understanding Servers, HTTP, API end-points, and JSON",
                                                     description: "" }),
                                        _react2.default.createElement(_SessionItem2.default, { id: "s14",
                                                     session: "Session 14",
-                                                    title: "With A Fourth",
+                                                    title: "Web Servers II: Build a Server",
                                                     description: "" })
                           )
              );
@@ -2032,7 +2057,7 @@ var Team = function Team(_ref) {
         ),
         _react2.default.createElement(
             "div",
-            { className: "flex-row" },
+            { className: "flex-row", style: { alignItems: 'baseline' } },
             _react2.default.createElement(_Profile2.default, { image: "https://s3.amazonaws.com/stack-hack-tutoring/eli-2.jpg",
                 job: _react2.default.createElement(
                     "div",
@@ -2045,10 +2070,10 @@ var Team = function Team(_ref) {
                     )
                 ),
                 name: "Eli Badgio",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                description: "I am a rising Senior at Rice University, pursuing a double major in Computer Science and Cognitive Science. I have a passion for product development, so my spare time is spent building web and mobile applications with my roommate. Two of our current projects are a live-messaging/thread-based social media app, as well as an Airbnb style app with a focus on cheap, shared living. I also play Ultimate Frisbee for Cloud9, the club team at Rice.",
                 college: "Rice University" }),
-            _react2.default.createElement(_Profile2.default, { image: "",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            _react2.default.createElement(_Profile2.default, { image: "https://s3.amazonaws.com/stack-hack-tutoring/IMG_6068.jpg",
+                description: "I am a rising Junior at the" + " University of Michigan where I am  pursuing a Computer" + " Science major with a Political Science minor." + " In my spare time, I use my coding skills to build predictive models for sports analytics." + " In one of my favorite projects, my team and I analyzed data from the Michigan Field Hockey team in order to provide feedback regarding injury prevention." + " I also play and coach tennis regularly.",
                 name: "Simon Sheintoch",
                 college: "University of Michigan" })
         )

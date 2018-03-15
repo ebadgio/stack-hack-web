@@ -9,7 +9,7 @@ const Syllabus = ({}) => {
             <div className="heading">Syllabus</div>
             <div className="heading-description overview">
                 <div>
-                    We offer our two tracks. <strong>No prior coding knowledge/experience is required for either track.</strong>
+                    We offer two course tracks. <strong>No prior coding knowledge/experience is required for either track.</strong>
                     &nbsp;However, the second more advanced track will move at a much faster pace during the last several
                     sessions, and will cover more difficult concepts.
                 </div>
@@ -21,7 +21,7 @@ const Syllabus = ({}) => {
                     This track consists of 10 sessions detailed below. We cover the very basic and fundamental
                     computer science concepts/structures during the first half. We then quickly transition into
                     progressively more sophisticated and interesting concepts. This track is ideal for students who
-                    are looking to explore computer science and build a strong foundation to build on moving forward
+                    are looking to explore computer science and develop a strong foundation to build on moving forward
                     in their education.
                 </div>
             </div>
@@ -72,11 +72,12 @@ const Syllabus = ({}) => {
                 <br/>
                 <strong style={{color: '#424242'}}><u>Track 2: Advanced Track</u></strong>
                 <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    For the Advanced Track, we finish the 10 sessions from the Core Track described above,
+                    then move quickly into more challenging concepts, which are covered in an additional set of 4 sessions.
+                    The Advanced Track covers material equivalent to (and likely more than) the material taught in an intro-level
+                    Computer Science course at any given University. This track is perfect for high school students who are
+                    interested in attempting the Computer Science major when they attend college. It is also fitting for younger students
+                    who have a strong affinity for math and science subjects.
                 </div>
             </div>
             <div className="flex-row" style={{maxWidth: '1000px'}}>
@@ -86,15 +87,15 @@ const Syllabus = ({}) => {
                              description=""/>
                 <SessionItem id="s12"
                              session="Session 12"
-                             title="Something Here"
+                             title="Text Parsing Using Regular Expressions"
                              description=""/>
                 <SessionItem id="s13"
                              session="Session 13"
-                             title="And Another Bit Here"
+                             title="Web Servers I: Understanding Servers, HTTP, API end-points, and JSON"
                              description=""/>
                 <SessionItem id="s14"
                              session="Session 14"
-                             title="With A Fourth"
+                             title="Web Servers II: Build a Server"
                              description=""/>
             </div>
 

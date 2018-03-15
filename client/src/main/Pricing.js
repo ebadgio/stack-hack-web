@@ -19,7 +19,7 @@ const Pricing = ({}) => {
                           <li>The 10 sessions detailed above</li>
                           <li>One-on-one tutor style learning for each session</li>
                           <li>Our instructional videos and comprehensive exercises</li>
-                          <li>Access to our Slack community of instructors and students for sharing resources, getting help, and conitnued learning</li>
+                          <li>Access to our Slack community of instructors and students for sharing resources, getting help, and continued learning</li>
                       </ul>
 
                   </div>

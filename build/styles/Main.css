@@ -301,6 +301,13 @@ a:hover {
     margin: 20px;
     height: 200px;
     width: 200px;
+    /*opacity: 0;*/
+    /*!*visibility: visible;*!*/
+    /*-webkit-transform: translateY(0) scale(1);*/
+    /*transform: translateY(0) scale(1);*/
+    /*!* opacity: 0; *!*/
+    /*-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.125s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.125s;*/
+    /*transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.125s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.125s;*/
 }
 
 .item-title {
@@ -356,7 +363,7 @@ a:hover {
 
 .profile-card {
     width: 430px;
-    height: 300px;
+    min-height: 300px;
     color: #757575;
     padding: 20px;
     margin: 20px auto;
@@ -380,6 +387,7 @@ a:hover {
     color: #424242;
     font-size: 24px;
     margin-bottom: 20px;
+    margin-left: -15px
 }
 
 .profile-card-college {
@@ -393,11 +401,21 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.bottom-info-wrapper {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -400px;
+}
+
+
 #bottom-block {
     background-color: #424242;
     background-color: #212121;
     width: 100%;
-    height: 250px;
+    height: 190px;
 }
 
 #exit {
