@@ -4,6 +4,7 @@ const session = require('express-session');
 const compress = require('compression');
 const path = require('path');
 const bodyParser = require('body-parser');
+const sslRedirect = require('heroku-ssl-redirect');
 // const mongoose = require('mongoose');
 // const passport = require('passport');
 // const LocalStrategy = require('passport-local');
@@ -21,6 +22,9 @@ const bodyParser = require('body-parser');
 
 
 const app = express();
+
+// enable ssl redirect
+app.use(sslRedirect());
 
 const buildPath = path.join(__dirname, '..', 'build');
 
