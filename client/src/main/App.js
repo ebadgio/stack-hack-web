@@ -20,7 +20,7 @@ class App extends React.Component {
 
     render() {
         return(
-            <div className="flex-col">
+            <div className="flex-col" style={{width: '100%'}}>
                 <Navbar />
                 <Cover />
                 <Overview />
