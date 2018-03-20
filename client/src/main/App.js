@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Components
-import Navbar from "./Navbar";
-import Cover from "./Cover";
-import Overview from "./Overview";
-import Syllabus from "./Syllabus";
-import Pricing from "./Pricing";
-import Team from "./Team";
-import Bottom from "./Bottom";
+import Navbar from "./components/Navbar";
+import Cover from "./components/Cover";
+import Overview from "./components/Overview";
+import Syllabus from "./components/Syllabus";
+import Pricing from "./components/Pricing";
+import Team from "./components/Team";
+import Bottom from "./components/Bottom";
 
 
 class App extends React.Component {

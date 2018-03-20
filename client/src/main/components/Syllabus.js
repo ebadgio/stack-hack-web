@@ -1,5 +1,5 @@
 import React from 'react';
-import SessionItem from "./SessionItem";
+import SessionItem from "../elements/SessionItem";
 
 const Syllabus = ({}) => {
 

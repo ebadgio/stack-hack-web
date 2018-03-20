@@ -20,6 +20,7 @@ const sslRedirect = require('heroku-ssl-redirect');
 // mongoose.connect(connect);
 // mongoose.Promise = global.Promise;
 
+const db = require('./Routes');
 
 const app = express();
 
@@ -74,6 +75,8 @@ app.use(bodyParser.urlencoded({ limit: '5mb', extended: false }));
 //         });
 //     }
 // ));
+
+app.use('/db', db);
 
 app.use('/privacy-policy', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'build/privacy.html'));
