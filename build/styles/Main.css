@@ -315,6 +315,14 @@ a:hover {
     height: 100px;
 }
 
+#bottom-block-content {
+    max-width: 1400px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
 #exit {
     height: 640px;
     background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/verne-ho-23880-unsplash.jpg);
@@ -342,3 +350,9 @@ a:hover {
     display: flex;
     justify-content: space-between;
 }
+
+.basic-row {
+    display: flex;
+    align-items: center;
+}
+

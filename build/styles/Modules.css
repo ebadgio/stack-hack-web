@@ -5,7 +5,7 @@
     border: 1px solid;
     border-radius: 6px;
     font: inherit;
-    background: rgba(0,0,0,.35);
+    background: rgba(0,0,0,.5);
     -webkit-transition: color .25s ease;
     transition: color .25s ease;
 }
@@ -24,7 +24,7 @@
     transition: color .25s ease;
     padding: 10px;
     resize: none;
-    background: rgba(0,0,0,.35);
+    background: rgba(0,0,0,.5);
     -webkit-appearance: none;
 
 }
