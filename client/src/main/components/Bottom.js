@@ -14,40 +14,66 @@ class Bottom extends React.Component {
             show: false,
             loading: false,
             failure: false,
-            success: false
+            success: false,
+            missingFields: false
         };
     }
 
 
     addContact() {
 
-        const fname = document.getElementById('fname').value;
-        const lname = document.getElementById('lname').value;
-        const email = document.getElementById('email').value;
-        const disc = document.getElementById('discussion').value;
+        const fname = document.getElementById('fname');
+        const lname = document.getElementById('lname');
+        const email = document.getElementById('email');
+        const disc = document.getElementById('discussion');
+
+        const fnameVal = fname.value;
+        const lnameVal = lname.value;
+        const emailVal = email.value;
+        const discVal = disc.value;
 
         const now = new Date();
         const date = now.toDateString() + " " + now.toLocaleTimeString();
 
-        if (fname && lname && email && disc) {
+        if (!fnameVal) {
+            fname.style.border = "1px solid #FF5252";
+            this.setState({missingFields: true});
+        }
+
+        if (!lnameVal) {
+            lname.style.border = "1px solid #FF5252";
+            this.setState({missingFields: true});
+        }
+
+        if (!emailVal) {
+            email.style.border = "1px solid #FF5252";
+            this.setState({missingFields: true});
+        }
+
+        if (!discVal) {
+            disc.style.border = "1px solid #FF5252";
+            this.setState({missingFields: true});
+        }
+
+        if (fnameVal && lnameVal && emailVal && discVal) {
 
             this.setState({loading: true});
 
             axios.post(URL + 'db/add/contact', {
-                fname: fname,
-                lname: lname,
-                email: email,
-                discussion: disc,
+                fname: fnameVal,
+                lname: lnameVal,
+                email: emailVal,
+                discussion: discVal,
                 submitted: date
             })
                 .then((res) => {
 
                     console.log('res', res);
 
-                    document.getElementById('fname').value = '';
-                    document.getElementById('lname').value = '';
-                    document.getElementById('email').value = '';
-                    document.getElementById('discussion').value = '';
+                    fname.value = '';
+                    lname.value = '';
+                    email.value = '';
+                    disc.value = '';
 
                     this.setState({
                         loading : false,
@@ -108,10 +134,15 @@ class Bottom extends React.Component {
                                       width="calc(100% - 22px)"
                                       rows="4"
                                       placeholder={"What would you like to discuss?"}/>
-                            <Button id="submit"
-                                    loading={this.state.loading}
-                                    text="Submit"
-                                    clickFunc={this.state.loading ? () => {} : () => this.addContact()}/>
+                            <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
+                                {this.state.missingFields ? <div className="failure" style={{alignSelf: 'center'}}>
+                                    * Missing Required Fields *
+                                </div> : <div />}
+                                <Button id="submit"
+                                        loading={this.state.loading}
+                                        text="Submit"
+                                        clickFunc={this.state.loading ? () => {} : () => this.addContact()}/>
+                            </div>
                         </div>
                     </div>
                 </div>
