@@ -71,6 +71,11 @@ class Bottom extends React.Component {
                 });
         }
     };
+
+    hide() {
+        this.setState({show: false});
+    }
+
     render() {
         return (
             <div style={{width: '100%'}}>
@@ -110,7 +115,10 @@ class Bottom extends React.Component {
                         </div>
                     </div>
                 </div>
-                {this.state.show ? <Portal failure={this.state.failure} success={this.state.success} time={2000}/> : <div />}
+                {this.state.show ? <Portal failure={this.state.failure}
+                                           endFunc={() => this.hide()}
+                                           success={this.state.success}
+                                           time={2000}/> : <div />}
                 <div id="bottom-block">
 
                 </div>

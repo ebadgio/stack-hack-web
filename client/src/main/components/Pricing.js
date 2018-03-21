@@ -29,15 +29,18 @@ const Pricing = ({}) => {
                       <strong style={{fontSize: '24px', color: '#424242'}}>Advanced Track</strong>
                       <br />
                       <br />
-                      <strong>Price</strong>: $800
+                      <strong>Price</strong>: $900
                       <br />
                       <br />
                       <div className="left">You get everything in Core <strong>+</strong></div>
                       <ul className="left">
-                          <li>4 more fast-paced sessions that cover high level concepts</li>
-                          <li>Experience using Version Control Software (Git)</li>
-                          <li>Practical knowledge ack-end web development</li>
+                          <li>4 more fast-paced sessions that cover high level concepts and full stack web development</li>
+                          <li>Experience using Version Control Software (<a href="https://www.github.com/"
+                                                                            target="_blank">Github</a>)</li>
+                          <li>Practical knowledge of back-end web development in Python</li>
                           <li>An introduction to front-end web development languages: HTML/CSS</li>
+                          <li>Ability to build a site from scratch and host it on <a href="https://www.heroku.com"
+                                                                             target="_blank">Heroku</a></li>
                       </ul>
                   </div>
               </div>

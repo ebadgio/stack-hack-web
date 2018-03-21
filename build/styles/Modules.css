@@ -90,19 +90,18 @@
 
 .portal {
     position: absolute;
-    height: 200px;
+    padding: 15px;
     width: 300px;
     max-width: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: -250px;
     z-index: 1;
-    border-radius: 6px;
     background: rgba(0,0,0,.8);
-    border: 1px solid;
     opacity: 0;
     -webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.125s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.125s;
     transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.125s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.125s;
+    background: #424242;
 }
 
 .success {

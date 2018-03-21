@@ -12,6 +12,9 @@ class Portal extends React.Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState({show: false});
+            setTimeout(() => {
+                this.props.endFunc();
+            }, 1000);
         }, this.props.time);
     }
 
@@ -35,8 +38,7 @@ class Portal extends React.Component {
                         <span style={{fontSize: '28px', textAlign: 'center'}}><strong>Something went wrong...</strong></span>
                     </div>
                     <div className="heading-description">
-                        There was an error while processing your info.
-                        Please make sure you have connection to the internet, and try again.
+                        Please try again.
                     </div>
                 </div>
             );

@@ -87,15 +87,15 @@ const Syllabus = ({}) => {
                              description=""/>
                 <SessionItem id="s12"
                              session="Session 12"
-                             title="Text Parsing Using Regular Expressions"
+                             title="Web Servers I: Understanding Servers, HTTP, API end-points, and JSON"
                              description=""/>
                 <SessionItem id="s13"
                              session="Session 13"
-                             title="Web Servers I: Understanding Servers, HTTP, API end-points, and JSON"
+                             title="Web Servers II: Build a Server"
                              description=""/>
                 <SessionItem id="s14"
                              session="Session 14"
-                             title="Web Servers II: Build a Server"
+                             title="Full Stack Web Development: Server + Frontend Using HTML/CSS, Site Hosting With Heroku"
                              description=""/>
             </div>
 
