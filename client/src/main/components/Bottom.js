@@ -104,7 +104,7 @@ class Bottom extends React.Component {
 
     render() {
         return (
-            <div style={{width: '100%'}}>
+            <div className="bottom-wrapper">
                 <div className="cover-photo-wrapper"
                      id="exit">
                 </div>

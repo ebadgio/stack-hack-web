@@ -356,4 +356,17 @@ a:hover {
     align-items: center;
 }
 
+.bottom-wrapper {
+
+}
+
+@media only screen and (max-width: 360px) and (min-width: 360px) {
+    .bottom-cover-wrapper {
+        width: 106%;
+    }
+    .bottom-wrapper {
+        width: 106%;
+        padding-left: 5%;
+    }
+}
 
