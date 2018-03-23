@@ -29,6 +29,11 @@
     /*align-items: center;*/
 /*}*/
 
+.cover-wrapper {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
 .cover-photo-wrapper {
     /*background-attachment: fixed;*/
     background-position: center;
@@ -44,8 +49,9 @@
 
 #landing {
     /*background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/artem-sapegin-176819-unsplash.jpg);*/
-    background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/emile-perron-190221-unsplash.jpg);
-    /* background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/patrick-lindenberg-191841-unsplash.jpg); */
+    /*background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/emile-perron-190221-unsplash.jpg);*/
+    background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/emile-perron-190221-unsplash-smaller.jpg);
+    /*!* background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/patrick-lindenberg-191841-unsplash.jpg); *!*/
     /* background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/carl-heyerdahl-181868-unsplash.jpg); */
 }
 
@@ -313,6 +319,8 @@ a:hover {
     background-color: #212121;
     width: 100%;
     height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #bottom-block-content {
@@ -357,16 +365,67 @@ a:hover {
 }
 
 .bottom-wrapper {
-
+    width: 100%;
 }
 
-@media only screen and (max-width: 360px) and (min-width: 360px) {
+#ending-block {
+    margin-bottom: 0px;
+    height: 100%;
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+    #landing {
+        background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/emile-perron-190221-unsplash.jpg);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #ending-block {
+        flex-wrap: wrap-reverse;
+    }
+    .contact {
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 360px) {
     .bottom-cover-wrapper {
         width: 106%;
     }
     .bottom-wrapper {
         width: 106%;
         padding-left: 5%;
+    }
+    .nav-title {
+        font-size: 18px;
+    }
+    .nav-logo {
+        width: 25px;
+        height: 25px;
+    }
+    .cover-wrapper {
+        width: 111%;
+    }
+    .topic-page-cover-cont-shadow {
+        padding-left: 9%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .bottom-wrapper {
+        width: 113%;
+        padding-left: 12%;
+    }
+    .bottom-cover-wrapper {
+        width: 113%
+    }
+    .cover-wrapper {
+        width: 125%;
+    }
+    .topic-page-cover-cont-shadow {
+        padding-left: 20%;
     }
 }
 

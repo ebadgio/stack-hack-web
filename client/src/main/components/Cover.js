@@ -3,8 +3,9 @@ import React from 'react';
 const Cover = ({}) => {
 
     return (
-        <div style={{marginBottom: '70px', width: '100%'}}>
+        <div className="cover-wrapper">
             <div className="cover-photo-wrapper" id="landing">
+                <img style={{display: 'none'}} src="https://s3.amazonaws.com/stack-hack-tutoring/emile-perron-190221-unsplash-smaller.jpg"/>
                 <img style={{display: 'none'}} src="https://s3.amazonaws.com/stack-hack-tutoring/emile-perron-190221-unsplash.jpg"/>
                 {/*<img className="cover-photo"*/}
                      {/*src="https://s3.amazonaws.com/stack-hack-tutoring/artem-sapegin-176819-unsplash.jpg"/>*/}
