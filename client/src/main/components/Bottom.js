@@ -158,8 +158,8 @@ class Bottom extends React.Component {
                                      src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-7.svg" />
                                 <span className="nav-title">Stack Hack Tutoring</span>
                             </div>
-                            <div className="basic-row">
-                                <div className="flex-col contact" style={{marginRight: '20px', alignItems: 'flex-end'}}>
+                            <div className="basic-row" id="contact">
+                                <div className="flex-col" style={{marginRight: '20px', alignItems: 'flex-end'}}>
                                     <div style={{color: '#ececec', marginBottom: '5px'}}><strong>CONTACT</strong></div>
                                     <div style={{color: '#bdbdbd'}}>610-256-1767</div>
                                     <div><a href="mailto:stackhack.team@gmail.com">stackhack.team@gmail.com</a></div>

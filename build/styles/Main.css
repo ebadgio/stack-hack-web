@@ -385,8 +385,23 @@ a:hover {
     #ending-block {
         flex-wrap: wrap-reverse;
     }
-    .contact {
+    #contact {
         margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .cover-wrapper {
+        width: 107%;
+    }
+    .topic-page-cover-cont-shadow {
+        padding-left: 24px;
+    }
+    .bottom-cover-wrapper {
+        padding-left: 19px;
+    }
+    .bottom-wrapper {
+        width: 107%;
     }
 }
 
