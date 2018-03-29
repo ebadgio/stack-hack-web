@@ -390,7 +390,7 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width: 375px) {
     .cover-wrapper {
         width: 107%;
     }
@@ -405,7 +405,7 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 360px) and (max-width: 360px) {
     .bottom-cover-wrapper {
         width: 106%;
     }
