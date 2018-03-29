@@ -52,7 +52,7 @@ const Syllabus = ({}) => {
                              description=""/>
                 <SessionItem id="s7"
                              session="Session 7"
-                             title="Recursive Functions"
+                             title="Recursive Functions, Sorting"
                              description=""/>
                 <SessionItem id="s8"
                              session="Session 8"
@@ -64,7 +64,7 @@ const Syllabus = ({}) => {
                              description=""/>
                 <SessionItem id="s10"
                              session="Session 10"
-                             title="Advanced Data structures, Sorting, Big-O"
+                             title="Advanced Data structures, Big-O"
                              description=""/>
             </div>
             <div className="heading-description overview">
@@ -74,10 +74,8 @@ const Syllabus = ({}) => {
                 <div>
                     For the Advanced Track, we finish the 10 sessions from the Core Track described above,
                     then move quickly into more challenging concepts, which are covered in an additional set of 4 sessions.
-                    The Advanced Track covers material equivalent to (and likely more than) the material taught in an intro-level
-                    Computer Science course at any given University. This track is perfect for high school students who are
-                    interested in attempting the Computer Science major when they attend college. It is also fitting for younger students
-                    who have a strong affinity for math and science subjects.
+                    This track also provides students with an introduction to full-stack web development, which means students who follow this track will be able to build a website from scratch!
+                    This track will move fast, so students must be prepared to put in the effort required to keep up.
                 </div>
             </div>
             <div className="flex-row" style={{maxWidth: '1000px'}}>

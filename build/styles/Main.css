@@ -327,6 +327,8 @@ a:hover {
     max-width: 1400px;
     height: 100%;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -406,6 +408,9 @@ a:hover {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 360px) {
+    .section-wrapper {
+        padding-left: 5%;
+    }
     .bottom-cover-wrapper {
         width: 106%;
     }

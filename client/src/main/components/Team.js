@@ -3,13 +3,22 @@ import Profile from "../elements/Profile";
 
 const Team = ({}) => {
     return(
-      <div className="section-wrapper">
+      <div className="section-wrapper flex-col">
           <div className="heading">Team</div>
-          <div className="flex-row" style={{alignItems: 'baseline'}}>
+          <div className="heading-description overview">
+              Our team consists of Lower Merion High School graduates who have taken up computer science while in college.
+              We feel that tech has a really small presence at Lower Merion, and so in an effort to fix that,
+              we created Stack Hack, hoping to introduce more students in the area to Computer Science before they go to college.
+          </div>
+          <div className="flex-row" style={{alignItems: 'baseline', marginTop: '20px'}}>
               <Profile image="https://s3.amazonaws.com/stack-hack-tutoring/eli-2.jpg"
                        job={<div>Software Engineering Intern at <a href="https://www.sap.com/" target="_blank">SAP</a></div>}
                        name="Eli Badgio"
-                       description={"I am a rising Senior at Rice University, pursuing a double major in Computer Science and Cognitive Science. I have a passion for product development, so my spare time is spent building web and mobile applications with my roommate. Two of our current projects are a live-messaging/thread-based social media app, as well as an Airbnb style app with a focus on cheap, shared living. I also play Ultimate Frisbee for Cloud9, the club team at Rice."}
+                       description={<div>I am a rising Senior at Rice University, pursuing a double major in Computer
+                           Science and Cognitive Science. I have a passion for product development, so my spare time is
+                           spent building web and mobile applications with my roommate. Two of our current projects are a
+                           live-messaging/thread-based social media app, as well as an Airbnb style app with a focus on cheap,
+                           shared living. I also play Ultimate Frisbee for Cloud9, the club team at Rice.</div>}
                        college="Rice University"/>
               <Profile image="https://s3.amazonaws.com/stack-hack-tutoring/IMG_6068.jpg"
                        description={"I am a rising Junior at the" +
