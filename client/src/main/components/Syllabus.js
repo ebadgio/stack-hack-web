@@ -5,7 +5,7 @@ const Syllabus = ({}) => {
 
 
     return (
-        <div className="section-wrapper flex-col">
+        <div className="section-wrapper flex-col" id="syllabus">
             <div className="heading">Syllabus</div>
             <div className="heading-description overview">
                 <div>

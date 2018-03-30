@@ -3,7 +3,7 @@ import React from 'react';
 const Pricing = ({}) => {
 
     return (
-      <div className="section-wrapper flex-col">
+      <div className="section-wrapper flex-col" id="pricing">
           <div className="heading">Pricing</div>
           <div className="flex-row">
               <div className="price-wrap shadow">

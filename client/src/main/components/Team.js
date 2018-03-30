@@ -3,7 +3,7 @@ import Profile from "../elements/Profile";
 
 const Team = ({}) => {
     return(
-      <div className="section-wrapper flex-col">
+      <div className="section-wrapper flex-col" id="team">
           <div className="heading">Team</div>
           <div className="heading-description overview">
               Our team consists of Lower Merion High School graduates who have taken up computer science while in college.

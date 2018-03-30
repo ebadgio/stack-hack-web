@@ -109,7 +109,7 @@ class Bottom extends React.Component {
                      id="exit">
                 </div>
                 <div className="bottom-cover-wrapper">
-                    <div className="bottom-info-wrapper">
+                    <div className="bottom-info-wrapper" id="contact">
                         <div className="cover-info-title">
                             Join Stack Hack today!
                         </div>
@@ -156,7 +156,7 @@ class Bottom extends React.Component {
                             <div className="basic-row">
                                 <img className="nav-logo"
                                      src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-7.svg" />
-                                <span className="nav-title">Stack Hack Tutoring</span>
+                                <span className="nav-title" style={{color: '#fff'}}>Stack Hack Tutoring</span>
                             </div>
                             <div className="basic-row" id="contact">
                                 <div className="flex-col" style={{marginRight: '20px', alignItems: 'flex-end'}}>

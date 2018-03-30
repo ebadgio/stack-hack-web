@@ -4,7 +4,7 @@ import Card from "../elements/Card";
 const Overview = ({}) => {
 
     return (
-        <div className="section-wrapper flex-col">
+        <div className="section-wrapper flex-col" id="overview">
             <div className="heading">Overview</div>
             <div className="heading-description overview">
                 Stack Hack combines the personalized and flexible aspect of tutoring services
