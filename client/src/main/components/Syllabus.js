@@ -11,7 +11,8 @@ const Syllabus = ({}) => {
                 <div>
                     We offer two course tracks. <strong>No prior coding knowledge/experience is required for either track.</strong>
                     &nbsp;However, the second more advanced track will move at a much faster pace during the last several
-                    sessions, and will cover more difficult concepts.
+                    sessions, and will cover more difficult concepts. For reference, even just our Core Track covers most of what is taught
+                    during an introductory computer science course at any given university, and generally those courses cost $3000-$4000.
                 </div>
                 <br/>
                 <br/>
@@ -74,7 +75,8 @@ const Syllabus = ({}) => {
                 <div>
                     For the Advanced Track, we finish the 10 sessions from the Core Track described above,
                     then move quickly into more challenging concepts, which are covered in an additional set of 4 sessions.
-                    This track also provides students with an introduction to full-stack web development, which means students who follow this track will be able to build a website from scratch!
+                    This track also provides students with an introduction to <strong>full-stack web development</strong>,
+                    which means students who follow this track will be able to build a website from scratch!
                     This track will move fast, so students must be prepared to put in the effort required to keep up.
                 </div>
             </div>
