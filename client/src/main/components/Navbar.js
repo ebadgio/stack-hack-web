@@ -28,29 +28,19 @@ class Navbar extends React.Component {
             }
         }, 50);
 
-        const elem = document.getElementById('nav');
-
         document.addEventListener('scroll', () => {
             if (this.state.listen) {
                 if (window.scrollY > this.state.scrollPos) {
                     this.setState({show: false, scrollPos: window.scrollY});
-                    elem.style.background = 'none';
-                    elem.style.color = '#fff';
-                    elem.style.boxShadow = 'none';
-                    document.getElementById("menu").style.width = "0";
+                    this.base();
 
                 } else {
                     if (!this.state.scrolled) {
                         this.setState({show: true, scrollPos: window.scrollY});
                         if (window.scrollY === 0) {
-                            elem.style.background = 'none';
-                            elem.style.color = '#fff';
-                            elem.style.boxShadow = 'none';
-                            document.getElementById("menu").style.width = "0";
+                            this.base()
                         } else {
-                            elem.style.background = '#fff';
-                            elem.style.color = '#424242';
-                            elem.style.boxShadow = '0 1px 7px rgba(0,0,0,.2)';
+                            this.lift();
                         }
                     } else {
                         this.setState({scrolled: false});
@@ -59,6 +49,23 @@ class Navbar extends React.Component {
                 }
             }
         });
+    }
+
+    base() {
+        const elem = document.getElementById('nav');
+        elem.style.background = 'none';
+        elem.style.color = '#fff';
+        elem.style.boxShadow = 'none';
+        document.getElementById("menu").style.width = "0";
+        document.getElementById('menu-btn').style.border = '1px solid';
+    };
+
+    lift() {
+        const elem = document.getElementById('nav');
+        elem.style.background = '#fff';
+        elem.style.color = '#424242';
+        elem.style.boxShadow = '0 1px 7px rgba(0,0,0,.2)';
+        document.getElementById('menu-btn').style.border = 'none';
     }
 
 
