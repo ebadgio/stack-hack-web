@@ -419,3 +419,11 @@ a:hover {
         margin-left: auto;
     }
 }
+
+
+@media only screen and (max-width: 320px) {
+    .overview-python {
+        padding:  0 5px !important;
+        width: 300px !important;
+    }
+}
