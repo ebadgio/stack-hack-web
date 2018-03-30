@@ -16,11 +16,32 @@ class Navbar extends React.Component {
     }
 
     componentDidMount() {
+
+        const close = () => {
+
+            document.getElementById("menu").style.width = "0";
+            document.getElementById('main-wrapper').removeEventListener('click', close);
+        };
+
+        const open = () => {
+
+            document.getElementById("menu").style.width = "200px";
+            setTimeout(() => {
+                if (document.getElementById("menu").style.width === '200px') {
+                    document.getElementById('main-wrapper').addEventListener('click', close);
+                }
+            }, 100);
+
+        };
+
+        document.getElementById('menu-btn').addEventListener('click', open);
+
         setInterval(() => {
             if (window.innerWidth > 750) {
                 document.getElementById('nav-item-wrapper').style.display = 'inherit';
                 document.getElementById('menu-btn').style.display = 'none';
                 document.getElementById("menu").style.width = "0";
+                close();
                 this.setState({open: true});
             } else {
                 document.getElementById('nav-item-wrapper').style.display = 'none';
@@ -33,6 +54,7 @@ class Navbar extends React.Component {
                 if (window.scrollY > this.state.scrollPos) {
                     this.setState({show: false, scrollPos: window.scrollY});
                     this.base();
+                    close();
 
                 } else {
                     if (!this.state.scrolled) {
@@ -75,16 +97,6 @@ class Navbar extends React.Component {
         this.setState({show: false, scrolled: true, open: true, listen: true});
     }
 
-    toggleMenu() {
-        if (this.state.open) {
-            document.getElementById("menu").style.width = "200px";
-            this.setState({open: false});
-        } else {
-            document.getElementById("menu").style.width = "0";
-            this.setState({open: true});
-        }
-    }
-
     render() {
         return(
             <div className="navbar" id="nav" style={this.state.show ? {position: 'fixed'} : {position: 'absolute'}}>
@@ -93,24 +105,24 @@ class Navbar extends React.Component {
                          src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-7.svg" />
                     <span className="nav-title">Stack Hack Tutoring</span>
                 </div>
-                <div id="menu-btn" onClick={() => this.toggleMenu()}>
+                <div id="menu-btn">
                     <i className="fas fa-bars" id="menu-icon" />
                 </div>
                 <div className="basic-row" id="nav-item-wrapper" style={{marginRight: '20px'}}>
                     <div className="nav-item nav-item-block" onClick={() => this.scroll('overview')}>
-                        OVERVIEW
+                        Overview
                     </div>
                     <div className="nav-item nav-item-block" onClick={() => this.scroll('syllabus')}>
-                        SYLLABUS
+                        Syllabus
                     </div>
                     <div className="nav-item nav-item-block" onClick={() => this.scroll('pricing')}>
-                        PRICING
+                        Pricing
                     </div>
                     <div className="nav-item nav-item-block" onClick={() => this.scroll('team')}>
-                        TEAM
+                        Team
                     </div>
                     <div className="nav-item nav-item-block" onClick={() => this.scroll('contact')}>
-                        CONTACT
+                        Contact
                     </div>
                 </div>
                 <div className="sidenav flex-col" id="menu">

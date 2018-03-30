@@ -12,7 +12,7 @@ const Syllabus = ({}) => {
                     We offer two course tracks. <strong>No prior coding knowledge/experience is required for either track.</strong>
                     &nbsp;However, the second more advanced track will move at a much faster pace during the last several
                     sessions, and will cover more difficult concepts. For reference, even just our Core Track covers most of what is taught
-                    during an introductory computer science course at any given university, and generally those courses cost $3000-$4000.
+                    during an introductory computer science course at any given university.
                 </div>
                 <br/>
                 <br/>
