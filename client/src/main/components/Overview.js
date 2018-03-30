@@ -34,7 +34,7 @@ const Overview = ({}) => {
                       description={<div>A key component of learning is to discuss, share, and continually refine what you have learned with your peers. To capture this aspect of learning we use a popular tool called <a href="https://slack.com/" target="_blank"><strong>Slack</strong></a> to gather all our students in one place and cultivate a strong community online.</div>}/>
                 <Card header="FLEXIBLE"
                       icon={<i id="cubes" className="fas fa-cubes base-icons" />}
-                      description={<div>As part of our tutor-style teaching, <strong>we come to you!</strong> We want to make this as easy and convenient as possible for every student, so we come to you at a time of your choosing.</div>}/>
+                      description={<div>As part of our tutor-style teaching, <strong>we come to you!</strong> We want to make this as easy and convenient as possible for every student, so we come to you at a time of your choosing. We can come once, twice, or even three times a week, if that's what it takes for you to fit us into your summer plans.</div>}/>
                 <Card header="STRATEGY"
                       icon={<i id="gears" className="fas fa-cogs base-icons" />}
                       description={<div>We teach students to think the right way while developing, which means learning to reason in a computational way and building good design strategies. This will make it easy for our students to keep learning and building even after the course is finished!</div>}/>
