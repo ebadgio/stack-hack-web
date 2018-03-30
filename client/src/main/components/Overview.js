@@ -37,7 +37,7 @@ const Overview = ({}) => {
                       description={<div>As part of our tutor-style teaching, <strong>we come to you!</strong> We want to make this as easy and convenient as possible for every student, so we come to you at a time of your choosing.</div>}/>
                 <Card header="STRATEGY"
                       icon={<i id="gears" className="fas fa-cogs base-icons" />}
-                      description={<div>We teach students to think the right while developing, which means learning to reason in a computational way and building good design strategies. This will make it easy for our students to keep learning and building even after the course is finished!</div>}/>
+                      description={<div>We teach students to think the right way while developing, which means learning to reason in a computational way and building good design strategies. This will make it easy for our students to keep learning and building even after the course is finished!</div>}/>
             </div>
             <div className="heading" style={{marginTop: '60px'}}>Why Python?</div>
             <div className="overview-python flex-col">
