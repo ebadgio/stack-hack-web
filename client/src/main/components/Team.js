@@ -7,8 +7,9 @@ const Team = ({}) => {
           <div className="heading">Team</div>
           <div className="heading-description overview">
               Our team consists of Lower Merion High School graduates who have taken up computer science while in college.
-              We feel that tech has a really small presence at Lower Merion, and so in an effort to fix that,
-              we created Stack Hack, hoping to introduce more students in the area to Computer Science before they go to college.
+              We feel that tech has a really small presence in the Lower Merion School District, so in an effort to fix that,
+              we created Stack Hack, hoping to introduce more students around Lower Merion to Computer Science as earlier
+              in their education as possible.
           </div>
           <div className="flex-row" style={{alignItems: 'baseline', marginTop: '20px'}}>
               <Profile image="https://s3.amazonaws.com/stack-hack-tutoring/eli-2.jpg"
