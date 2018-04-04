@@ -106,42 +106,45 @@ class Bottom extends React.Component {
         return (
             <div className="bottom-wrapper">
                 <div className="cover-photo-wrapper"
+                     style={{filter: 'none'}}
                      id="exit">
-                </div>
-                <div className="bottom-cover-wrapper">
-                    <div className="bottom-info-wrapper" id="contact">
-                        <div className="cover-info-title">
-                            Join Stack Hack today!
-                        </div>
-                        <div className="heading-description"
-                             style={{marginBottom: '40px'}}>
-                            If you're interested and/or want more info, then enter your name, email,
-                            and a brief description of what you wish to discuss below and we'll reach out to you shortly!
-                        </div>
-                        <div className="contact-enter-wrapper">
-                            <div className="fit-row">
-                                <Input id="fname"
-                                       placeholder="First Name"
-                                       width="45%"/>
-                                <Input id="lname"
-                                       placeholder="Last Name"
-                                       width="45%"/>
-                            </div>
-                            <div className="fit-row">
-                                <Input id="email" placeholder="Email (e.g. jane.doe@gmail.com)" width="100%"/>
-                            </div>
-                            <TextArea id="discussion"
-                                      width="calc(100% - 22px)"
-                                      rows="4"
-                                      placeholder={"What would you like to discuss?"}/>
-                            <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
-                                {this.state.missingFields ? <div className="failure" style={{alignSelf: 'center'}}>
-                                    * Missing Required Fields *
-                                </div> : <div />}
-                                <Button id="submit"
-                                        loading={this.state.loading}
-                                        text="Submit"
-                                        clickFunc={this.state.loading ? () => {} : () => this.addContact()}/>
+                    <div className="bottom-cover-wrapper">
+                        <div className="filter">
+                            <div className="bottom-info-wrapper" id="contact">
+                                <div className="cover-info-title">
+                                    Join Stack Hack today!
+                                </div>
+                                <div className="heading-description"
+                                     style={{marginBottom: '40px'}}>
+                                    If you're interested and/or want more info, then enter your name, email,
+                                    and a brief description of what you wish to discuss below and we'll reach out to you shortly!
+                                </div>
+                                <div className="contact-enter-wrapper">
+                                    <div className="fit-row">
+                                        <Input id="fname"
+                                               placeholder="First Name"
+                                               width="45%"/>
+                                        <Input id="lname"
+                                               placeholder="Last Name"
+                                               width="45%"/>
+                                    </div>
+                                    <div className="fit-row">
+                                        <Input id="email" placeholder="Email (e.g. jane.doe@gmail.com)" width="100%"/>
+                                    </div>
+                                    <TextArea id="discussion"
+                                              width="calc(100% - 22px)"
+                                              rows="4"
+                                              placeholder={"What would you like to discuss?"}/>
+                                    <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
+                                        {this.state.missingFields ? <div className="failure" style={{alignSelf: 'center'}}>
+                                            * Missing Required Fields *
+                                        </div> : <div />}
+                                        <Button id="submit"
+                                                loading={this.state.loading}
+                                                text="Submit"
+                                                clickFunc={this.state.loading ? () => {} : () => this.addContact()}/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

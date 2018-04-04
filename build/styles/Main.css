@@ -126,6 +126,15 @@
     /*background: linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.4) 40%,rgba(0,0,0,.4) 70%,rgba(0,0,0,.5));*/
 }
 
+.filter {
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.4) 40%,rgba(0,0,0,.4) 70%,rgba(0,0,0,.5));
+}
+
 .cover-info-logo {
     height: 90px;
     width: 90px;
@@ -334,11 +343,11 @@ a:hover {
 }
 
 .bottom-cover-wrapper {
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     height: 640px;
     display: flex;
-    margin-top: -640px;
+    /*margin-top: -640px;*/
     justify-content: center;
     align-items: center;
 }
