@@ -41,7 +41,7 @@ const Overview = ({}) => {
                           refine what they have learned.</div>}/>
                 <Card header="FLEXIBILITY"
                       icon={<i id="cubes" className="fas fa-cubes base-icons" />}
-                      description={<div><strong>We come to you!</strong>
+                      description={<div><strong>We come to you! </strong>
                           We want to make this as easy and convenient as possible for every student. We work
                           with the students and their families to create a schedule that does not
                           interfere with other summer plans.</div>}/>
