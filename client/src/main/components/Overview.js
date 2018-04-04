@@ -8,9 +8,9 @@ const Overview = ({}) => {
             <div className="heading">Overview</div>
             <div className="heading-description overview">
                 Stack Hack combines the personalized and flexible aspect of tutoring services
-                with the structure and organization of a full computer science course. We begin with the coding fundamentals
-                and progress quickly onto more sophisticated concepts such as recursion, object-oriented programming, and
-                graph theory. The language we will be working in is{' '}
+                with the structure and organization of a full computer science course. We begin with the fundamentals of programming
+                and progress quickly onto more sophisticated concepts such as recursion, object-oriented programming,
+                graph theory, and even web development. The language we will be working in is{' '}
                 <a href="https://www.python.org/" target="_blank">
                     <strong>Python</strong>
                 </a> (see why below).
@@ -22,22 +22,35 @@ const Overview = ({}) => {
                                 <i className="fas fa-user user-icons offset" />
                                 <i className="far fa-user user-icons" />
                             </div>}
-                      description="Our tutor style teaching provides students with a one-on-one learning environment, which allows each student to move at their own pace and get the most out each and session and the course as a whole. "/>
+                      description={<div>Our one-on-one tutoring-style teaching allows our students to
+                          move at their own pace and get the most out of each session.</div>}/>
                 <Card header="VIDEOS"
                       icon={<div>
                                 <i className="fas fa-laptop screen-icons offset" />
                                 <i className="fas fa-mobile screen-icons" />
                             </div>}
-                      description="We have instructional videos made for each topic, so that our students are able to obtain an introduction to the material before each session. Along with each video we provide a few exercises for the students to attempt on their own, and reinforce what they just learned."/>
+                      description={<div>Our students will have unlimited access to videos and exercises created for every
+                          topic covered in this course. These videos will improve learning by providing the students the
+                          opportunity to both prepare for, as well as reinforce, what they have learned in each session.</div>}/>
                 <Card header="COMMUNITY"
                       icon={<i className="fab fa-slack slack-icon"/>}
-                      description={<div>A key component of learning is to discuss, share, and continually refine what you have learned with your peers. To capture this aspect of learning we use a popular tool called <a href="https://slack.com/" target="_blank"><strong>Slack</strong></a> to gather all our students in one place and cultivate a strong community online.</div>}/>
+                      description={<div>
+                          Connection with peers facilitates learning. At Stack Hack we utilize a tool called
+                          {' '}<a href="https://slack.com/" target="_blank"><strong>Slack</strong></a> in order to cultivate
+                          a strong online community that provides a forum for our students to discuss, share and continually
+                          refine what they have learned.</div>}/>
                 <Card header="FLEXIBILITY"
                       icon={<i id="cubes" className="fas fa-cubes base-icons" />}
-                      description={<div>As part of our tutor-style teaching, <strong>we come to you!</strong> We want to make this as easy and convenient as possible for every student, so we come to you at a time of your choosing. We can come once, twice, or even three times a week, if that's what it takes for you to fit us into your summer plans.</div>}/>
+                      description={<div><strong>We come to you!</strong>
+                          We want to make this as easy and convenient as possible for every student. We work
+                          with the students and their families to create a schedule that does not
+                          interfere with other summer plans.</div>}/>
                 <Card header="STRATEGY"
                       icon={<i id="gears" className="fas fa-cogs base-icons" />}
-                      description={<div>We teach students to think the right way while developing, which means learning to reason in a computational way and building good design strategies. This will make it easy for our students to keep learning and building even after the course is finished!</div>}/>
+                      description={<div>We teach students to think the right way while developing,
+                          which means learning to reason in a computational way and building good design strategies.
+                          This will make it easy for our students to keep learning and building even after the
+                          course is finished!</div>}/>
             </div>
             <div className="heading" style={{marginTop: '60px'}}>Why Python?</div>
             <div className="overview-python flex-col">

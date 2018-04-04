@@ -115,7 +115,7 @@ class Bottom extends React.Component {
                                     Join Stack Hack today!
                                 </div>
                                 <div className="heading-description"
-                                     style={{marginBottom: '40px'}}>
+                                     style={{marginBottom: '40px', color: '#fff'}}>
                                     If you're interested and/or want more info, then enter your name, email,
                                     and a brief description of what you wish to discuss below and we'll reach out to you shortly!
                                 </div>

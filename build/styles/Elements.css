@@ -1,6 +1,6 @@
 .card-outer {
 
-    height: 440px;
+    min-height: 410px;
     width: 320px;
     /*border: 1px solid #ececec;*/
     color: #424242;

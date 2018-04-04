@@ -98,7 +98,28 @@ const Syllabus = ({}) => {
                              title="Full Stack Web Development: Server + Frontend Using HTML/CSS, Site Hosting With Heroku"
                              description=""/>
             </div>
-
+            <div className="heading-description overview">
+                <br/>
+                <br/>
+                <strong style={{color: '#424242'}}><u>Track 3: Custom Track</u></strong>
+                <div>
+                    We also have the option of a custom track where we design a syllabus/lesson plan specifically for your
+                    needs. This makes it possible for students to have a <strong>tailored learning experience</strong> that covers only material
+                    relevant to their needs, and in a time frame that fits their summer schedule. For example, this track
+                    is perfect for students who follow into one or more of the following categories:
+                    <div style={{textAlign: '-webkit-auto', fontWeight: '700'}}>
+                        <ul>
+                            <li>You are only available for a small portion of the summer</li>
+                            <li>You already know programming and want to have a few sessions that cover a specific topic in depth</li>
+                            <li>You already know programming and want to do one of the above tracks, but skip the sessions
+                                that cover the fundamentals</li>
+                            <li>You want to work on a single project from start to finish, such as a personal website</li>
+                        </ul>
+                    </div>
+                    Of course, there are a number of other reasons that you might opt to select the custom track. The examples above
+                    are a just a few of the main reasons.
+                </div>
+            </div>
         </div>
     );
 
