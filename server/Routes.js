@@ -1,34 +1,18 @@
-"use strict";
 const express = require('express');
 const router = express.Router();
-// const contact = require('./resources/contact');
-const fs = require('fs');
 const nodemailer = require('nodemailer');
+const password = process.env.email_password;
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'stackhack.team@gmail.com',
-        pass: 'stackhack!'
+        pass: password
     }
 });
 
 
 router.post('/add/contact', (req, res) => {
-
-        // fs.readFile('contact.json', (err, data) => {
-        //     if (err) throw err;
-        //     const parsed = JSON.parse(data);
-        //     //const copy = Array.from(data);
-        //     parsed.push(req.body);
-        //     console.log('parsed added', parsed);
-        //     const json = JSON.stringify(parsed, null, 2);
-        //     fs.writeFile('contact.json', json, (err) => {
-        //         if (err) throw err;
-        //         console.log('Data written to file');
-        //         res.json({success: true})
-        //     })
-        // });
         const mailOptions = {
             from: 'stackhack.team@gmail.com',
             to: 'stackhack.team@gmail.com',
