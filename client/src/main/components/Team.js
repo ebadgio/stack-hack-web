@@ -21,7 +21,7 @@ const Team = ({}) => {
                            live-messaging/thread-based social media app, as well as an Airbnb style app with a focus on cheap,
                            shared living. I also play Ultimate Frisbee for Cloud9, the club team at Rice.</div>}
                        college="Rice University"/>
-              <Profile image="https://s3.amazonaws.com/stack-hack-tutoring/IMG_6068.jpg"
+              <Profile image="https://s3.amazonaws.com/stack-hack-tutoring/180429-Simon-0012RT.jpg"
                        description={<div>Rising Junior at the University of Michigan where I am  pursuing a Computer Science
                            major with a Political Science minor. In my spare time, I use my coding skills to build
                            predictive models for sports analytics. In one of my favorite projects, my team and I analyzed
