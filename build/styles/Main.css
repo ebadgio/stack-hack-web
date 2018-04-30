@@ -413,6 +413,9 @@ a:hover {
     height: 100%;
 }
 
+#simon-pic {
+    background-position-x: -76px;
+}
 
 
 @media only screen and (min-width: 1400px) {

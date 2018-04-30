@@ -20,6 +20,7 @@ const Team = ({}) => {
                            spent building web and mobile applications with my roommate. Two of our current projects are a
                            live-messaging/thread-based social media app, as well as an Airbnb style app with a focus on cheap,
                            shared living. I also play Ultimate Frisbee for Cloud9, the club team at Rice.</div>}
+                       id="eli-pic"
                        college="Rice University"/>
               <Profile image="https://s3.amazonaws.com/stack-hack-tutoring/180429-Simon-0012RT.jpg"
                        description={<div>Rising Junior at the University of Michigan where I am  pursuing a Computer Science
@@ -28,6 +29,7 @@ const Team = ({}) => {
                            data from the Michigan Field Hockey team in order to provide feedback regarding injury prevention.
                            I also play and coach tennis regularly.</div>}
                        name="Simon Sheintoch"
+                       id="simon-pic"
                        college="University of Michigan"/>
           </div>
       </div>
