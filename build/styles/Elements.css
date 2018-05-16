@@ -20,7 +20,7 @@
 
 .card-description {
     text-align: center;
-    margin: 0 30px;
+    margin: 0 30px 25px 30px;
     line-height: 24px;
     font-size: 18px;
 }
@@ -86,12 +86,17 @@
     width: 430px;
     min-height: 300px;
     color: #757575;
-    padding: 20px;
     margin: 20px auto;
+    max-width: 100%;
 }
 
+.profile-card-row {
+    width: 95%;
+}
+
+
 .profile-card-blurb {
-    width: 100%;
+    width: 95%;
 }
 
 .profile-card-name {
