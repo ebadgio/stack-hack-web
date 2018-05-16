@@ -5,11 +5,9 @@ class Navbar extends React.Component {
     constructor() {
         super();
         this.state ={
-            show: false,
             scrollPos: 0,
             scrolled: false,
             open: true,
-            listen: true,
             hasResized: false,
             size: window.innerWidth
         };
@@ -50,24 +48,14 @@ class Navbar extends React.Component {
         }, 50);
 
         document.addEventListener('scroll', () => {
-            if (this.state.listen) {
-                if (window.scrollY > this.state.scrollPos) {
-                    this.setState({show: false, scrollPos: window.scrollY});
+            if (window.scrollY === 0) {
+                this.base()
+            } else {
+                if (this.state.scrolled) {
                     this.base();
-                    close();
-
+                    this.setState({scrolled: false});
                 } else {
-                    if (!this.state.scrolled) {
-                        this.setState({show: true, scrollPos: window.scrollY});
-                        if (window.scrollY === 0) {
-                            this.base()
-                        } else {
-                            this.lift();
-                        }
-                    } else {
-                        this.setState({scrolled: false});
-                    }
-
+                    this.lift();
                 }
             }
         });
@@ -78,6 +66,7 @@ class Navbar extends React.Component {
         elem.style.background = 'none';
         elem.style.color = '#fff';
         elem.style.boxShadow = 'none';
+        elem.style.position = 'absolute';
         document.getElementById("menu").style.width = "0";
         document.getElementById('menu-btn').style.border = '1px solid';
     };
@@ -87,6 +76,7 @@ class Navbar extends React.Component {
         elem.style.background = '#fff';
         elem.style.color = '#424242';
         elem.style.boxShadow = '0 1px 7px rgba(0,0,0,.2)';
+        elem.style.position = 'fixed';
         document.getElementById('menu-btn').style.border = 'none';
     }
 
@@ -94,12 +84,13 @@ class Navbar extends React.Component {
     scroll(id) {
         document.getElementById(id).scrollIntoView();
         document.getElementById("menu").style.width = "0";
-        this.setState({show: false, scrolled: true, open: true, listen: true});
+        this.base();
+        this.setState({open: true, scrolled: true});
     }
 
     render() {
         return(
-            <div className="navbar" id="nav" style={this.state.show ? {position: 'fixed'} : {position: 'absolute'}}>
+            <div className="navbar" id="nav">
                 <div className="basic-row" id="nav-wrap">
                     <img className="nav-logo"
                          src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-7.svg" />
