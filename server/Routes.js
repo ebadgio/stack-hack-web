@@ -17,7 +17,14 @@ router.post('/add/contact', (req, res) => {
             from: 'stackhack.team@gmail.com',
             to: 'stackhack.team@gmail.com',
             subject: 'NEW CONTACT: ' + req.body.fname + ' ' + req.body.lname,
-            html: `<div><h1>First Name: ${req.body.fname}</h1><br/><h1>Last Name: ${req.body.lname}</h1><h1>Email: ${req.body.email}</h1><br/><p>${req.body.discussion}</p></div>`
+            html: `<div>
+                        <h1>First Name: ${req.body.fname}</h1>
+                        <br/>
+                        <h1>Last Name: ${req.body.lname}</h1>
+                        <h1>Email: ${req.body.email}</h1>
+                        <br/>
+                        <p>${req.body.discussion}</p>
+                   </div>`
         };
         transporter.sendMail(mailOptions,  (err, info) => {
             if (err) {
