@@ -6,9 +6,9 @@ const Team = ({}) => {
       <div className="section-wrapper flex-col" id="team">
           <div className="heading">Team</div>
           <div className="heading-description overview">
-              Our team consists of Lower Merion High School graduates who have taken up computer science while in college.
-              We feel that tech has a really small presence in the Lower Merion School District, so in an effort to fix that,
-              we created Stack Hack, hoping to introduce more students around Lower Merion to Computer Science as early
+              Our team consists of Lower Merion High School alumni who have taken up computer science while in college.
+              We feel that tech has a really small presence in the Main Line area, so in an effort to fix that,
+              we created Stack Hack, hoping to introduce more students around the Main Line to computer programming as early
               in their education as possible.
           </div>
           <div className="flex-row" style={{alignItems: 'baseline', marginTop: '20px'}}>

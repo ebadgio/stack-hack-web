@@ -10,47 +10,82 @@ const Overview = ({}) => {
                 Stack Hack combines the personalized and flexible aspect of tutoring services
                 with the structure and organization of a full computer science course. We begin with the fundamentals of programming
                 and progress quickly onto more sophisticated concepts such as recursion, object-oriented programming,
-                graph theory, and even web development. The language we will be working in is{' '}
+                graph theory, and then for the remained of the course we learn full stack web development. The language we will be working in is{' '}
                 <a href="https://www.python.org/" target="_blank">
                     <strong>Python</strong>
-                </a> (see why below).
+                </a>.
             </div>
             <div className="heading" style={{marginTop: '60px'}}>What You'll Get</div>
             <div className="flex-row">
-                <Card header="ONE-ON-ONE"
-                      icon={<div>
-                                <i className="fas fa-user user-icons offset" />
-                                <i className="far fa-user user-icons" />
-                            </div>}
-                      description={<div>Our one-on-one tutoring-style teaching allows our students to
-                          move at their own pace and get the most out of each session.</div>}/>
                 <Card header="VIDEOS"
                       icon={<div>
-                                <i className="fas fa-laptop screen-icons offset" />
-                                <i className="fas fa-mobile screen-icons" />
+                                <i className="fas fa-video user-icons offset" />
+                                <i className="fab fa-youtube user-icons" />
                             </div>}
                       description={<div>Our students will have unlimited access to videos and exercises created for every
-                          topic covered in this course. These videos will improve learning by providing the students the
-                          opportunity to both prepare for, as well as reinforce, what they have learned in each session.</div>}/>
+                          topic covered in this course.
+                          {/*These videos will improve learning by providing the students the*/}
+                          {/*opportunity to both prepare for, as well as reinforce, what they have learned in each session.*/}
+                      </div>}/>
+                <Card header="WEB DEVELOPMENT"
+                      icon={<div>
+                          <i className="fas fa-laptop screen-icons offset" />
+                          <i className="fas fa-mobile screen-icons" />
+                      </div>}
+                      description={<div>After learning the core programming concepts, we move on to full-stack web development.
+                          {/*Our backend work will be in Python and we will learn to work with frontend languages HTML and CSS.*/}
+                          Students who complete the course will have built a fully functional blogging site.</div>}/>
                 <Card header="COMMUNITY"
                       icon={<i className="fab fa-slack slack-icon"/>}
                       description={<div>
-                          Connection with peers facilitates learning. At Stack Hack we utilize a tool called
-                          {' '}<a href="https://slack.com/" target="_blank"><strong>Slack</strong></a> in order to cultivate
-                          a strong online community that provides a forum for our students to discuss, share and continually
-                          refine what they have learned.</div>}/>
+                          Connection with peers facilitates learning. At Stack Hack we use a tool called
+                          {' '}<a href="https://slack.com/" target="_blank"><strong>Slack</strong></a> to create
+                          a platform for our students to discuss and share what they have learned.</div>}/>
                 <Card header="FLEXIBILITY"
                       icon={<i id="cubes" className="fas fa-cubes base-icons" />}
-                      description={<div><strong>We come to you! </strong>
-                          We want to make this as easy and convenient as possible for every student. We work
-                          with the students and their families to create a schedule that does not
-                          interfere with other summer plans.</div>}/>
+                      // description={<div>
+                      //     We want to make this as easy and convenient as possible for every student. We have designed the Stack Hack program
+                      //     so that students can begin sessions at any point in the summer they want, and come to sessions during the weeks
+                      //     where they have the time.</div>}
+                      description={<div>We designed Stack Hack so that students can begin course sessions at any point in the summer they want, and come to sessions during the weeks
+                          where they have the time.</div>}/>
                 <Card header="STRATEGY"
                       icon={<i id="gears" className="fas fa-cogs base-icons" />}
                       description={<div>We teach students to think the right way while developing,
-                          which means learning to reason in a computational way and building good design strategies.
-                          This will make it easy for our students to keep learning and building even after the
-                          course is finished!</div>}/>
+                          which means learning to reason in a computational way and building good design strategies.</div>}/>
+            </div>
+            <div className="heading" style={{marginTop: '60px'}}>How It Works</div>
+            <div className="heading-description overview">
+                    <strong>No prior coding knowledge/experience is required!</strong>
+                    <br />
+                    <br />
+                    We follow the <strong>flipped classroom model</strong>. This means that before each session students will be asked
+                    to watch 1 or 2 videos and complete a small set of exercises, and then during the sessions we start
+                    by answering any questions the students have. After answering questions, students will work on more
+                    difficult exercises covering the material they learned in the videos. As the students work, we (the instructors)
+                    will be moving from student to student to provide one-on-one assistance when needed.
+                    <br />
+                    <div id="img-cont" className="flex-row">
+                        <div id="c-1">
+                            <img className="c-img"
+                                 src="https://s3.amazonaws.com/stack-hack-tutoring/taras-shypka-424928-unsplash.jpg" />
+                        </div>
+                        <div id="c-2">
+                            <img className="c-img"
+                                 src="https://s3.amazonaws.com/stack-hack-tutoring/annie-spratt-608001-unsplash.jpg"/>
+                        </div>
+                    </div>
+                    We will hold two sessions per week:
+                    <br />
+                    <br />
+                    <strong>Sundays: 4-5pm</strong>
+                    <br />
+                    <strong>Tuesdays: 8-9pm</strong>
+                    <br />
+                    <br />
+                    Our first session will be on Sunday June 4th, and they will continue throughout the summer
+                    until the end of August! Students can pay by the session or by packages of sessions,
+                    which we describe in the syllabus and pricing sections below.
             </div>
             <div className="heading" style={{marginTop: '60px'}}>Why Python?</div>
             <div className="overview-python flex-col">

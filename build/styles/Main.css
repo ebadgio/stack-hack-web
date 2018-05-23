@@ -253,12 +253,12 @@ a:hover {
 }
 
 .price-wrap {
-    min-height: 522px;
+    min-height: 80px;
     width: 380px;
     background: #fff;
     border-radius: 6px;
     margin: 20px;
-    padding: 20px 20px 10px 20px;
+    padding: 25px;
 }
 
 .overview-python {
@@ -334,6 +334,46 @@ a:hover {
     margin-bottom: 20px;
 }
 
+#img-cont {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+}
+
+
+#c-1 {
+    /*background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/taras-shypka-424928-unsplash.jpg);*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    width: 200px;
+    height: 150px;
+    max-width: 50%;
+    /*border-radius: 6px;*/
+    margin: 15px;
+    overflow: hidden;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#c-2 {
+    /*background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/annie-spratt-608001-unsplash.jpg);*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    width: 200px;
+    height: 150px;
+    max-height: 150px;
+    max-width: 50%;
+    overflow: hidden;
+    /*border-radius: 6px;*/
+    margin: 15px;
+}
+
+
 .bottom-info-wrapper {
     display: flex;
     align-items: center;
@@ -369,7 +409,11 @@ a:hover {
     margin-right: auto;
 }
 
-
+.box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 #exit {
     height: 640px;
@@ -417,10 +461,11 @@ a:hover {
     background-position-x: -76px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .overview {
         max-width: 90% !important;
     }
+
 }
 
 
@@ -436,6 +481,12 @@ a:hover {
     }
     #contact {
         margin-left: auto;
+    }
+    #c-1 {
+        margin: auto !important;
+    }
+    #c-2 {
+        margin: auto !important;
     }
 }
 
