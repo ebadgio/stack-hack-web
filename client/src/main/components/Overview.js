@@ -9,8 +9,8 @@ const Overview = ({}) => {
             <div className="heading-description overview">
                 Stack Hack combines the personalized and flexible aspect of tutoring services
                 with the structure and organization of a full computer science course. We begin with the fundamentals of programming
-                and progress quickly onto more sophisticated concepts such as recursion, object-oriented programming,
-                graph theory, and then for the remained of the course we learn full stack web development. The language we will be working in is{' '}
+                and progress quickly onto more sophisticated concepts such as recursion and object-oriented programming
+                and then for the remained of the course we learn full stack web development. The language we will be working in is{' '}
                 <a href="https://www.python.org/" target="_blank">
                     <strong>Python</strong>
                 </a>.
