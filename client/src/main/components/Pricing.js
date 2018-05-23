@@ -13,8 +13,7 @@ const Pricing = ({}) => {
               Slack online community for discussions.
               <br />
               <br />
-              <br />
-              <span style={{fontSize: '28px'}}><strong>We have three pricing options:</strong></span>
+              <span style={{fontSize: '22px'}}><strong>We have three pricing options:</strong></span>
               <br />
           </div>
           <div className="flex-row">
