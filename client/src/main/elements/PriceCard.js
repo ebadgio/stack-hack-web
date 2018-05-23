@@ -4,7 +4,7 @@ const PriceCard = ({track, price, statement, details, style}) => {
 
     return (
         <div className="price-wrap shadow box" style={style}>
-            <div className="heading-description overview" style={{maxWidth: '100%'}}>
+            <div className="heading-description" style={{maxWidth: '100%', color: '#616161'}}>
                 <strong style={{fontSize: '24px', color: '#424242'}}>{track}</strong>
                 <br />
                 <br />
