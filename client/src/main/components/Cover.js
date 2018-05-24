@@ -19,7 +19,7 @@ const Cover = ({}) => {
                     {/*<img className="cover-info-logo" src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-4.svg"/>*/}
                     <div className="cover-info-title">Decode the Code with Stack Hack</div>
                     <div className="heading-description">
-                        A Python programming a Full-Stack Web Development summer course
+                        A Python programming and Full-Stack Web Development summer course
                     </div>
                 </div>
             </div>
