@@ -56,7 +56,7 @@ const Overview = ({}) => {
             </div>
             <div className="heading" style={{marginTop: '60px'}}>How It Works</div>
             <div className="heading-description overview">
-                    <strong>No prior coding knowledge/experience is required!</strong>
+                    <strong>No prior coding knowledge/experience is required! But students will be asked to bring a laptop to each session.</strong>
                     <br />
                     <br />
                     We follow the <strong>flipped classroom model</strong>. This means that before each session students will be asked
