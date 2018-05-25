@@ -34,7 +34,7 @@ const Overview = ({}) => {
                       </div>}
                       description={<div>After learning the core programming concepts, we move on to full-stack web development.
                           {/*Our backend work will be in Python and we will learn to work with frontend languages HTML and CSS.*/}
-                          Students who complete the course will have built a fully functional blogging site.</div>}/>
+                          {' '}Students who complete the course will have built a fully functional blogging site.</div>}/>
                 <Card header="COMMUNITY"
                       icon={<i className="fab fa-slack slack-icon"/>}
                       description={<div>
@@ -83,7 +83,7 @@ const Overview = ({}) => {
                     <strong>Tuesdays: 8-9pm</strong>
                     <br />
                     <br />
-                    Our first session will be on Sunday June 3rd, and they will continue throughout the summer
+                    Our first session will be on Tuesday June 19th, and they will continue throughout the summer
                     until the end of August! Students can pay by the session or by packages of sessions,
                     which we describe in the syllabus and pricing sections below.
             </div>
