@@ -35,7 +35,7 @@ const Syllabus = ({}) => {
                              title="Dictionaries, Sets, Nested Data Structures"/>
                 <SessionItem id="s6"
                              session="Session 6"
-                             title="Sequence Methods, Lambdas, Random Variables"/>
+                             title="Iterable Methods, Lambdas"/>
                 <SessionItem id="s7"
                              session="Session 7"
                              title="Recursive Functions, Sorting"/>
