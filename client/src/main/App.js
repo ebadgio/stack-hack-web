@@ -24,21 +24,30 @@ class App extends React.Component {
     render() {
         return(
             <Switch>
-                <Route exact
-                       path="/"
-                       render={() => <div className="flex-col fill" id="main-wrapper">
-                                        <Navbar />
-                                        <Cover />
-                                        <Overview />
-                                        <Syllabus/>
-                                        <Pricing />
-                                        <Team />
-                                        <Bottom />
-                                    </div>} />
+                {/*<Route exact*/}
+                       {/*path="/"*/}
+                       {/*render={() => <div className="flex-col fill" id="main-wrapper">*/}
+                                        {/*<Navbar />*/}
+                                        {/*<Cover />*/}
+                                        {/*<Overview />*/}
+                                        {/*<Syllabus/>*/}
+                                        {/*<Pricing />*/}
+                                        {/*<Team />*/}
+                                        {/*<Bottom />*/}
+                                    {/*</div>} />*/}
                 <Route path="/materials"
                        render={() => <Materials />} />
                 <Route path="/privacy-policy"
                        render={() => <Privacy />} />
+                <Route render={() => <div className="flex-col fill" id="main-wrapper">
+                    <Navbar />
+                    <Cover />
+                    <Overview />
+                    <Syllabus/>
+                    <Pricing />
+                    <Team />
+                    <Bottom />
+                </div>} />
             </Switch>
         );
     }
