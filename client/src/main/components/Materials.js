@@ -6,16 +6,14 @@ import {history} from "../../../app";
 
 
 const Materials = ({}) => {
-    return (<div className="flex-col frame" style={{paddingTop: '60px'}}>
+    return (<div className="flex-col frame" style={{paddingTop: '20px'}}>
         <Button className="trans-grey soft-edge"
                 text={<span><i className="fas fa-chevron-left mr-10"/>Back To Home</span>}
                 clickFunc={() => history.replace('/')}
-                style={{position: 'absolute',
-                    left: '20px',
+                style={{
                     height: '60px',
-                    width: '200px',
-                    top: '20px'}} />
-        <div style={{textAlign: 'center'}}>
+                    width: '200px', marginRight: 'auto', marginLeft: '10px'}} />
+        <div style={{textAlign: 'center'}} className="p-10">
             <h1>
                 <u>Stack Hack Materials</u>
             </h1>

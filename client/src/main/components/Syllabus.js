@@ -20,7 +20,7 @@ const Syllabus = ({}) => {
             <div className="flex-row" style={{maxWidth: '1000px'}}>
                 <SessionItem id="s1"
                              session="Session 1"
-                             title="Fundamentals I: Functions, Variables, Types, Conditional Logic,"/>
+                             title="Fundamentals I: Functions, Variables, Types, Conditional Logic"/>
                 <SessionItem id="s2"
                              session="Session 2"
                              title="Fundamentals III: Lists, Tuples"/>
