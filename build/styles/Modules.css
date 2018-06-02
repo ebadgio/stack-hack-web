@@ -45,13 +45,25 @@
     transition: background .35s ease;
 }
 
-.primary {
-    background: #536dfe;
-    color: #fff;
+.soft-edge {
     border-radius: 6px;
 }
 
-.btn:hover {
+.primary {
+    background: #536dfe;
+    color: #fff;
+}
+
+.trans-grey {
+    background: rgba(0,0,0,.25);
+    color: #fff;
+}
+
+.trans-grey:hover {
+    background: rgba(0,0,0,.35);
+}
+
+.primary:hover {
     background: #3d5afe;
 }
 
@@ -64,6 +76,7 @@
     font-weight: 900;
     filter: brightness(90%);
 }
+
 
 .loader {
     border: 7px solid rgba(0,0,0,.1); /* Light grey */

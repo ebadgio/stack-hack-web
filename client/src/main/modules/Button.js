@@ -1,9 +1,19 @@
 import React from 'react';
 
-const Button = ({text, id, loading, clickFunc}) => {
+const Button = ({text, className, id, loading, clickFunc, style}) => {
+    if (loading) {
+        return <div className={"loading-btn" + className}
+                    id={id}
+                    style={style}>
+            <div className="loader" style={{width: '27px', height: '27px'}}/>
+        </div>
+    }
     return(
-        <div className={loading ? "loading-btn primary" : "btn primary"} id={id} onClick={() => clickFunc()}>
-            {loading ? <div className="loader" style={{width: '27px', height: '27px'}}/> : <span>{text}</span>}
+        <div className={"btn " + className}
+             id={id}
+             onClick={() => clickFunc()}
+             style={style}>
+            <span>{text}</span>
         </div>
     );
 };

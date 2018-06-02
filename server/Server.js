@@ -22,10 +22,6 @@ app.use(bodyParser.urlencoded({ limit: '5mb', extended: false }));
 
 app.use('/db', db);
 
-app.use('/privacy-policy', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'build/privacy.html'));
-});
-
 // frontend entry
 app.use('*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'build/index.html'));

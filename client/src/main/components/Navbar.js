@@ -38,7 +38,6 @@ class Navbar extends React.Component {
             if (window.innerWidth > 750) {
                 document.getElementById('nav-item-wrapper').style.display = 'inherit';
                 document.getElementById('menu-btn').style.display = 'none';
-                document.getElementById("menu").style.width = "0";
                 close();
                 this.setState({open: true});
             } else {

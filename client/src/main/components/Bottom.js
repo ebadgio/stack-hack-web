@@ -141,6 +141,7 @@ class Bottom extends React.Component {
                                         </div> : <div />}
                                         <Button id="submit"
                                                 loading={this.state.loading}
+                                                className="primary soft-edge"
                                                 text="Submit"
                                                 clickFunc={this.state.loading ? () => {} : () => this.addContact()}/>
                                     </div>
