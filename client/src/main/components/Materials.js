@@ -22,6 +22,9 @@ const Materials = ({}) => {
             <MaterialItem session={"Session 1"}
                           videos={["https://youtu.be/dnz_wsA3Vls", "https://youtu.be/KBgAivPcuj0"]}
                           exercises={["http://rice.codeskulptor.org/#user44_jQxx6GjlxU_2.py"]}/>
+            <MaterialItem session={"Session 2"}
+                          videos={["https://youtu.be/WzMzT-KQkMU"]}
+                          exercises={["http://rice.codeskulptor.org/#user44_7XnpXJvnNc_2.py"]}/>
             {/*<MaterialItem session={"Session 1"}*/}
                           {/*videos={["https://youtu.be/dnz_wsA3Vls", "https://youtu.be/KBgAivPcuj0"]}*/}
                           {/*exercises={["http://rice.codeskulptor.org/#user44_jQxx6GjlxU_2.py"]}/>*/}
