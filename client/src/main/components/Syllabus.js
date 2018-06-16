@@ -23,13 +23,13 @@ const Syllabus = ({}) => {
                              title="Fundamentals I: Functions, Variables, Types, Conditional Logic"/>
                 <SessionItem id="s2"
                              session="Session 2"
-                             title="Fundamentals III: Lists, Tuples"/>
+                             title="Fundamentals II: Lists, Tuples"/>
                 <SessionItem id="s3"
                              session="Session 3"
-                             title="Fundamentals IIII: For-loops, While-loops"/>
+                             title="Fundamentals III: For-loops, While-loops"/>
                 <SessionItem id="s4"
                              session="Session 4"
-                             title="Dictionaries, Sets, Nested Data Structures"/>
+                             title="Fundamentals IIII: Dictionaries, Sets"/>
                 <SessionItem id="s5"
                              session="Session 5"
                              title="Iterable Methods, Lambdas"/>
