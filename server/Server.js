@@ -3,7 +3,7 @@ const compress = require('compression');
 const path = require('path');
 const bodyParser = require('body-parser');
 const sslRedirect = require('heroku-ssl-redirect');
-
+const http = require('http');
 const db = require('./Routes');
 
 const app = express();
@@ -27,7 +27,32 @@ app.use('*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'build/index.html'));
 });
 
-
+// const keepAwake = () => {
+//     console.log('called keepAwake');
+//     // An object of options to indicate where to post to
+//     const options = {
+//         host: 'www.walnutnetwork.com',
+//         path: '/',
+//         method: 'POST'
+//     };
+//
+//     // Set up the request
+//     const request = http.request(options, (res) => {
+//         res.setEncoding('utf8');
+//         res.on('data', (chunk) => {
+//             console.log('Response: ' + chunk);
+//         });
+//     });
+//
+//     // post the data
+//     request.write("Hello");
+//     request.end();
+// };
+//
+// keepAwake();
+// setInterval(() => {
+//     keepAwake();
+// }, 1200000);
 
 // Handles unknown routes
 app.use((req, res, next) => {
