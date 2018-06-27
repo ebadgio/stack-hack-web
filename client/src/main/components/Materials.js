@@ -27,7 +27,7 @@ const Materials = ({}) => {
                           exercises={["http://rice.codeskulptor.org/#user44_7XnpXJvnNc_2.py"]}/>
             <MaterialItem session={"Session 3"}
                           videos={["https://youtu.be/I5n6ooroSYg"]}
-                          exercises={["http://rice.codeskulptor.org/#user44_nNTtvwjjMR_0.py"]}/>
+                          exercises={["http://rice.codeskulptor.org/#user44_nNTtvwjjMR_1.py"]}/>
             {/*<MaterialItem session={"Session 1"}*/}
                           {/*videos={["https://youtu.be/dnz_wsA3Vls", "https://youtu.be/KBgAivPcuj0"]}*/}
                           {/*exercises={["http://rice.codeskulptor.org/#user44_jQxx6GjlxU_2.py"]}/>*/}
