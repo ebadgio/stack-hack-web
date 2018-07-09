@@ -12,7 +12,8 @@ const Cover = ({}) => {
             </div>
             {/*<div className="cover-info-wrapper">*/}
                 {/*<img className="cover-info-logo" src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-4.svg"/>*/}
-                {/*<span className="cover-info-title">Stack Hack Tutoring</span>*/}
+                {/*<span className="cover-info-title">Stack Hack Tutoring</span
+            >*/}
             {/*</div>*/}
             <div className="topic-page-cover-cont-shadow">
                 <div className="cover-info-wrapper">

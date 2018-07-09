@@ -117,7 +117,8 @@ li {
 
 .nav-title {
     font-size: 20px;
-    font-weight: 900;
+    /*font-weight: 900;*/
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-logo {
