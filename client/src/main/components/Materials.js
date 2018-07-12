@@ -31,6 +31,9 @@ const Materials = ({}) => {
             <MaterialItem session={"Session 4"}
                           videos={["https://youtu.be/HUxNYS-ND3A", "https://youtu.be/z_g9G4XGpxw"]}
                           exercises={["http://rice.codeskulptor.org/#user44_O4mYj0JPGF_0.py"]}/>
+            <MaterialItem session={"Session 5"}
+                          videos={["https://youtu.be/dZjLz3SWHA4"]}
+                          exercises={["http://rice.codeskulptor.org/#user44_WtsxcURi2e_1.py"]}/>
         </div>
 
     </div>);
