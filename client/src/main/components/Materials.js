@@ -33,7 +33,7 @@ const Materials = ({}) => {
                           exercises={["http://rice.codeskulptor.org/#user44_O4mYj0JPGF_0.py"]}/>
             <MaterialItem session={"Session 5"}
                           videos={["https://youtu.be/dZjLz3SWHA4"]}
-                          exercises={["http://rice.codeskulptor.org/#user44_WtsxcURi2e_1.py"]}/>
+                          exercises={["https://rice.codeskulptor.org/#user44_w68VQadeig_0.py"]}/>
         </div>
 
     </div>);
