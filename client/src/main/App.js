@@ -28,7 +28,7 @@ class App extends React.Component {
                 <Route path="/materials"
                        render={() => <Materials />} />
                 <Route path="/solutions"
-                       render={() => <Materials />} />
+                       render={() => <Solutions />} />
                 <Route path="/privacy-policy"
                        render={() => <Privacy />} />
                 <Route render={() => <div className="flex-col fill" id="main-wrapper">

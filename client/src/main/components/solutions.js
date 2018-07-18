@@ -5,7 +5,7 @@ import Button from "../modules/Button";
 import {history} from "../../../app";
 
 
-const Materials = ({}) => {
+const Solutions = ({}) => {
     return (<div className="flex-col frame" style={{paddingTop: '20px'}}>
         <Button className="trans-grey soft-edge"
                 text={<span><i className="fas fa-chevron-left mr-10"/>Back To Home</span>}
@@ -42,4 +42,4 @@ const Materials = ({}) => {
     </div>);
 };
 
-export default Materials;
+export default Solutions;
