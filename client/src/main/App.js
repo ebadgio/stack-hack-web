@@ -11,6 +11,7 @@ import Pricing from "./components/Pricing";
 import Team from "./components/Team";
 import Bottom from "./components/Bottom";
 import Materials from "./components/Materials";
+import Solutions from "./components/Solutions";
 import Privacy from "./components/Privacy";
 
 
@@ -24,18 +25,9 @@ class App extends React.Component {
     render() {
         return(
             <Switch>
-                {/*<Route exact*/}
-                       {/*path="/"*/}
-                       {/*render={() => <div className="flex-col fill" id="main-wrapper">*/}
-                                        {/*<Navbar />*/}
-                                        {/*<Cover />*/}
-                                        {/*<Overview />*/}
-                                        {/*<Syllabus/>*/}
-                                        {/*<Pricing />*/}
-                                        {/*<Team />*/}
-                                        {/*<Bottom />*/}
-                                    {/*</div>} />*/}
                 <Route path="/materials"
+                       render={() => <Materials />} />
+                <Route path="/solutions"
                        render={() => <Materials />} />
                 <Route path="/privacy-policy"
                        render={() => <Privacy />} />
