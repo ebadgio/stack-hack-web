@@ -205,3 +205,6 @@
     color: #fff;
 }
 
+.material-item-description {
+    word-break: break-all;
+}

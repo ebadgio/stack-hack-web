@@ -15,7 +15,7 @@ const Solutions = ({}) => {
                     width: '200px', marginRight: 'auto', marginLeft: '10px'}} />
         <Button className="trans-grey soft-edge"
                 text={<span><i className="fas fa-chevron-left mr-10"/>Go To Materials</span>}
-                clickFunc={() => history.replace('/')}
+                clickFunc={() => history.replace('/materials')}
                 style={{
                     height: '60px',
                     width: '200px', marginRight: 'auto', marginTop: '20px', marginLeft: '10px'}} />
@@ -24,7 +24,7 @@ const Solutions = ({}) => {
                 <u>Stack Hack Solutions</u>
             </h1>
         </div>
-        <div className="flex-row" style={{maxWidth: '800px'}}>
+        <div className="flex-row" style={{maxWidth: '1000px'}}>
             <MaterialItem session={"Session 1"}
                           solution={"http://rice.codeskulptor.org/#user44_Dcdfki5ZPH_3.py"}/>
             <MaterialItem session={"Session 2"}

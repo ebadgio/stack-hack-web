@@ -3,13 +3,11 @@ import React from 'react';
 const MaterialItem = ({session, videos, exercises, solution}) => {
     if (!!solution) {
         return (
-        <div className="shadow flex-col box p-20 m-10" style={{maxWidth: '100%', minHeight: '300px'}}>
+        <div className="shadow flex-col box p-20 m-10" style={{maxWidth: '400px', minHeight: '150px'}}>
             <div className="card-heading" style={{color: '#536dfe'}}>{session}</div>
             <div className="material-item-description">
-                <strong>Solutions:</strong>
-                <div>
+                <strong>Solutions:{' '}</strong>
                     <a href={solution} target="_blank">{solution}</a>
-                </div>
             </div>
         </div>);
     }
