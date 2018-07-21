@@ -14,6 +14,9 @@ import Materials from "./components/Materials";
 import Solutions from "./components/Solutions";
 import Privacy from "./components/Privacy";
 
+// Elements
+import Scalene from "./elements/Scalene";
+
 
 class App extends React.Component {
     constructor() {
@@ -31,11 +34,16 @@ class App extends React.Component {
                        render={() => <Solutions />} />
                 <Route path="/privacy-policy"
                        render={() => <Privacy />} />
-                <Route render={() => <div className="flex-col fill" id="main-wrapper">
+                <Route render={() => <div className="flex-col fill"
+                                                 id="main-wrapper">
                     <Navbar />
                     <Cover />
+                    <svg className="wide-scalene" preserveAspectRatio="none" viewBox=" 0 0 100 100">
+                        <polygon className="fill-light" points="100 0 0 0 0 50" />
+                    </svg>
                     <Overview />
                     <Syllabus/>
+                    <Scalene fill={'#183055'} className={"wide-scalene"}/>
                     <Pricing />
                     <Team />
                     <Bottom />

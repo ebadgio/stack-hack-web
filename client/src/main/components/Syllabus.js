@@ -1,23 +1,18 @@
 import React from 'react';
+
+// Elements
 import SessionItem from "../elements/SessionItem";
+import Scalene from "../elements/Scalene";
 
 const Syllabus = ({}) => {
 
 
     return (
-        <div className="section-wrapper flex-col" id="syllabus">
-            <div className="heading">Syllabus</div>
-            <div className="heading-description overview">
-                <strong style={{color: '#424242'}}><u>Core Concepts</u></strong>
-                <br/>
-                <div>
-                    The core programming concepts are covered in the 8 sessions detailed below. We begin with the very basic and fundamental
-                    computer science concepts/structures. We then quickly transition into
-                    progressively more sophisticated and interesting concepts. Our Core Concepts sessions cover most of the material
-                    that a student learns during an intro-level college CS course.
-                </div>
-            </div>
-            <div className="flex-row" style={{maxWidth: '1000px'}}>
+        <div className="section-wrapper flex-col fill-dark" id="syllabus">
+            <Scalene fill={'#fff'} className={"wide-scalene"}/>
+            <div className="heading white-text">Syllabus</div>
+            <div className="heading-sub white-text" style={{margin: '20px auto 20px 40px'}}>CORE CONCEPTS</div>
+            <div className="flex-row">
                 <SessionItem id="s1"
                              session="Session 1"
                              title="Fundamentals I: Functions, Variables, Types, Conditional Logic"/>
@@ -50,17 +45,9 @@ const Syllabus = ({}) => {
                              {/*session="Session 10"*/}
                              {/*title="Big-O, Graph Traversal Algorithms"/>*/}
             </div>
-            <div className="heading-description overview">
-                <br/>
-                <br/>
-                <strong style={{color: '#424242'}}><u>Web Development</u></strong>
-                <div>
-                    In the last six sessions, we provide students with an introduction to <strong>full-stack web development</strong>.
-                    Students who complete these six courses will learn to build a full-fledged web application from scratch.
-                    Students will be building a blogging site to apply the concepts as they learn them.
-                </div>
-            </div>
-            <div className="flex-row" style={{maxWidth: '1000px'}}>
+
+            <div className="heading-sub white-text" style={{margin: '20px auto 20px 40px'}}>FULL STACK WEB DEVELOPMENT</div>
+            <div className="flex-row">
                 <SessionItem id="s9"
                              session="Session 9"
                              title="Version Control with Git, Github, Command-line tools"/>
@@ -80,28 +67,6 @@ const Syllabus = ({}) => {
                              session="Session 14"
                              title="Posting, Pagination, Deploying site to Heroku"/>
             </div>
-            {/*<div className="heading-description overview">*/}
-                {/*<br/>*/}
-                {/*<br/>*/}
-                {/*<strong style={{color: '#424242'}}><u>Track 3: Custom Track</u></strong>*/}
-                {/*<div>*/}
-                    {/*We also have the option of a custom track where we design a syllabus/lesson plan specifically for your*/}
-                    {/*needs. This makes it possible for students to have a <strong>tailored learning experience</strong> that covers only material*/}
-                    {/*relevant to their needs, and in a time frame that fits their summer schedule. For example, this track*/}
-                    {/*is perfect for students who follow into one or more of the following categories:*/}
-                    {/*<div style={{textAlign: '-webkit-auto', fontWeight: '700'}}>*/}
-                        {/*<ul>*/}
-                            {/*<li>You are only available for a small portion of the summer</li>*/}
-                            {/*<li>You already know programming and want to have a few sessions that cover a specific topic in depth</li>*/}
-                            {/*<li>You already know programming and want to do one of the above tracks, but skip the sessions*/}
-                                {/*that cover the fundamentals</li>*/}
-                            {/*<li>You want to work on a single project from start to finish, such as a personal website</li>*/}
-                        {/*</ul>*/}
-                    {/*</div>*/}
-                    {/*Of course, there are a number of other reasons that you might opt to select the custom track. The examples above*/}
-                    {/*are a just a few of the main reasons.*/}
-                {/*</div>*/}
-            {/*</div>*/}
         </div>
     );
 

@@ -1,11 +1,10 @@
 import React from 'react';
 
-const SessionItem = ({top, session, title, id, description}) => {
+const SessionItem = ({top, session, title, id}) => {
     return (
-      <div id={id} className="item-wrapper shadow frame">
-          <div className="item-label"><strong><u>{session}</u></strong></div>
-          <div className="item-title">{title}</div>
-          {/*<div className="item-description">{description}</div>*/}
+      <div id={id} className="item-wrapper">
+          <div className="item-label">{session}</div>
+          <div className="item-title faint-text">{title}</div>
       </div>
     );
 };

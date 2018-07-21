@@ -62,7 +62,7 @@ class Navbar extends React.Component {
 
     base() {
         const elem = document.getElementById('nav');
-        elem.style.background = 'none';
+        elem.style.background = '#424242';
         elem.style.color = '#fff';
         elem.style.boxShadow = 'none';
         elem.style.position = 'absolute';
@@ -74,7 +74,7 @@ class Navbar extends React.Component {
         const elem = document.getElementById('nav');
         elem.style.background = '#fff';
         elem.style.color = '#424242';
-        elem.style.boxShadow = '0 1px 7px rgba(0,0,0,.2)';
+        elem.style.boxShadow = '0 1px 7px rgba(0,0,0,.05)';
         elem.style.position = 'fixed';
         document.getElementById('menu-btn').style.border = 'none';
     }

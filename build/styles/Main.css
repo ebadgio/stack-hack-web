@@ -6,9 +6,9 @@
     width: 100%;
     background: none;
     /*background: #fff;*/
-    /*background: #212121;*/
+    background: #424242;
     /*box-shadow: 0 2px 7px rgba(0,0,0,.3);*/
-    position: absolute;
+    position: fixed;
     top:0;
     display: flex;
     z-index: 1;
@@ -74,7 +74,8 @@ li {
 
 .cover-wrapper {
     width: 100%;
-    margin-bottom: 70px;
+    height: 400px;
+    padding-top: 57px;
 }
 
 .wrapper {
@@ -96,6 +97,17 @@ li {
     /*object-fit: cover;*/
     /*overflow: hidden;*/
 
+}
+
+.fill-dark {
+    background-color: #183055;
+    fill: #183055;
+    /*background-color: #1F65D6;*/
+}
+
+.fill-light {
+    background-color: #3884FF;
+    fill: #3884FF;
 }
 
 #landing {
@@ -130,12 +142,10 @@ li {
 
 .cover-info-wrapper {
     display: flex;
-    position: absolute;
-    /*top: 140px;*/
     align-items: center;
     flex-direction: column;
-    max-width: 550px;
-    padding: 0 20px;
+    width: 100%;
+    height: 400px;
 }
 
 .topic-page-cover-cont-shadow {
@@ -172,16 +182,44 @@ li {
     margin-bottom: 20px;
 }
 
-.heading {
+.black-text {
+    color: #212121;
+}
+
+.dark-grey-text {
     color: #424242;
+}
+
+.grey-text {
+    color: #606060;
+}
+
+.light-grey-text {
+    color: #bdbdbd;
+}
+
+.faint-text {
+    color: #e0e0e0;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.heading {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
 }
 
+.heading-sub {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+}
+
 .heading-description {
-    color: #ececec;
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -200,7 +238,7 @@ li {
 
 .section-wrapper {
     width: 100%;
-    margin-bottom: 60px;
+
     max-width: 1400px;
 }
 
@@ -213,6 +251,11 @@ li {
 }
 
 .shadow {
+    -webkit-box-shadow: 0 1px 7px rgba(0,0,0,.05);
+    box-shadow: 0 1px 7px rgba(0,0,0,.05);
+}
+
+.shadow-light {
     -webkit-box-shadow: 0 1px 7px rgba(0,0,0,.10);
     box-shadow: 0 1px 7px rgba(0,0,0,.10);
 }
@@ -268,11 +311,10 @@ a:hover {
 .code-wrap {
     height: 200px;
     width: 300px;
-    background: #fff;
-    border-radius: 6px;
+    border-radius: 4px;
     margin: 20px;
     font-size: 15px;
-
+    background-color: rgba(0,0,0,.05);
 }
 
 .price-wrap {
