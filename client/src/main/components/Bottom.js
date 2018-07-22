@@ -2,10 +2,14 @@ import React from 'react';
 import axios from 'axios';
 import URL from '../../../../info';
 
+// Modules
 import Input from "../modules/Input";
 import TextArea from "../modules/TextArea";
 import Button from "../modules/Button";
 import Portal from "../modules/Portal";
+
+// Elements
+import Scalene from '../elements/Scalene';
 
 class Bottom extends React.Component {
     constructor() {
@@ -104,48 +108,43 @@ class Bottom extends React.Component {
 
     render() {
         return (
-            <div className="bottom-wrapper">
-                <div className="cover-photo-wrapper"
-                     style={{filter: 'none'}}
-                     id="exit">
-                    <div className="bottom-cover-wrapper">
-                        <div className="filter">
-                            <div className="bottom-info-wrapper" id="contact">
-                                <div className="cover-info-title">
-                                    Join Stack Hack today!
-                                </div>
-                                <div className="heading-description"
-                                     style={{marginBottom: '40px', color: '#fff'}}>
-                                    If you're interested and/or want more info, then enter your name, email,
-                                    and a brief description of what you wish to discuss below and we'll reach out to you shortly!
-                                </div>
-                                <div className="contact-enter-wrapper">
-                                    <div className="fit-row">
-                                        <Input id="fname"
-                                               placeholder="First Name"
-                                               width="45%"/>
-                                        <Input id="lname"
-                                               placeholder="Last Name"
-                                               width="45%"/>
-                                    </div>
-                                    <div className="fit-row">
-                                        <Input id="email" placeholder="Email (e.g. jane.doe@gmail.com)" width="100%"/>
-                                    </div>
-                                    <TextArea id="discussion"
-                                              width="calc(100% - 22px)"
-                                              rows="4"
-                                              placeholder={"What would you like to discuss?"}/>
-                                    <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
-                                        {this.state.missingFields ? <div className="failure" style={{alignSelf: 'center'}}>
-                                            * Missing Required Fields *
-                                        </div> : <div />}
-                                        <Button id="submit"
-                                                loading={this.state.loading}
-                                                className="primary soft-edge"
-                                                text="Submit"
-                                                clickFunc={this.state.loading ? () => {} : () => this.addContact()}/>
-                                    </div>
-                                </div>
+            <div className="bottom-wrapper fill-light">
+                <Scalene fill={'#fff'} className={"wide-scalene"}/>
+                <div className="wrapper">
+                    <div className="bottom-info-wrapper" id="contact">
+                        <div className="cover-info-title center-text">
+                            Join Stack Hack today!
+                        </div>
+                        <div className="heading-description center-text"
+                             style={{marginBottom: '40px', color: '#fff'}}>
+                            If you're interested and/or want more info, then enter your name, email,
+                            and a brief description of what you wish to discuss below and we'll reach out to you shortly!
+                        </div>
+                        <div className="contact-enter-wrapper">
+                            <div className="fit-row">
+                                <Input id="fname"
+                                       placeholder="First Name"
+                                       width="45%"/>
+                                <Input id="lname"
+                                       placeholder="Last Name"
+                                       width="45%"/>
+                            </div>
+                            <div className="fit-row">
+                                <Input id="email" placeholder="Email (e.g. jane.doe@gmail.com)" width="100%"/>
+                            </div>
+                            <TextArea id="discussion"
+                                      width="calc(100% - 22px)"
+                                      rows="4"
+                                      placeholder={"What would you like to discuss?"}/>
+                            <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
+                                {this.state.missingFields ? <div className="failure" style={{alignSelf: 'center'}}>
+                                    * Missing Required Fields *
+                                </div> : <div />}
+                                <Button id="submit"
+                                        loading={this.state.loading}
+                                        className="trans-grey soft-edge"
+                                        text="Submit"
+                                        clickFunc={this.state.loading ? () => {} : () => this.addContact()}/>
                             </div>
                         </div>
                     </div>
@@ -155,8 +154,9 @@ class Bottom extends React.Component {
                                            success={this.state.success}
                                            time={2000}/> : <div />}
                 <div id="bottom-block">
-                    <div id="bottom-block-content">
-                        <div className="fit-row" id="ending-block">
+                    <Scalene fill={'#3884FF'} className={"wide-scalene"}/>
+                    <div className="section-wrapper">
+                        <div className="fit-row contain" id="ending-block">
                             <div className="basic-row">
                                 <img className="nav-logo"
                                      src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-7.svg" />

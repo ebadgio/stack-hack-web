@@ -1,22 +1,23 @@
 
 
-
 .navbar {
     min-height: 57px;
     width: 100%;
     background: none;
-    /*background: #fff;*/
     background: #424242;
-    /*box-shadow: 0 2px 7px rgba(0,0,0,.3);*/
     position: fixed;
     top:0;
-    display: flex;
     z-index: 1;
-    align-items: center;
     color: #fff;
-    justify-content: space-between;
     -webkit-transition: background .25s ease, color .2s ease;
     transition: background .25s ease, color .2s ease;
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
 }
 
 
@@ -41,6 +42,14 @@ li {
     margin: 10px;
 }
 
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
 .side {
     margin-bottom: 15px;
     margin-right: 20px;
@@ -50,16 +59,32 @@ li {
 }
 
 .nav-item-block {
-    height: 57px;
-    padding: 0 10px;
+    padding: 15px 10px 0px 10px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
 }
 
-.nav-item-block:hover {
-    background: rgba(0,0,0,.1);
+.nav-item-block::after {
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 7px;
+    width: 10px;
+    border-radius: 27px;
+    background: transparent;
+    transition: width .4s ease, background-color .4s ease;
 }
+.nav-item-block:hover::after {
+    width: 100%;
+    background: #1de9b6;
+}
+
+/*.nav-item-block:hover {*/
+    /*background: rgba(0,0,0,.1);*/
+/*}*/
 
 .side:hover {
     color: #fff;
@@ -74,30 +99,17 @@ li {
 
 .cover-wrapper {
     width: 100%;
-    height: 400px;
     padding-top: 57px;
+    overflow: hidden;
 }
 
 .wrapper {
     width: 100%;
-    height: 600px;
+    min-height: 600px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.cover-photo-wrapper {
-    /*background-attachment: fixed;*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(70%);
-    height: 470px;
-    background-color: #212121;
-    /*object-fit: cover;*/
-    /*overflow: hidden;*/
-
-}
 
 .fill-dark {
     background-color: #183055;
@@ -123,10 +135,6 @@ li {
     min-height: 470px;
 }
 
-.cover-photo {
-    width: 100%;
-}
-
 .nav-title {
     font-size: 20px;
     /*font-weight: 900;*/
@@ -142,11 +150,26 @@ li {
 
 .cover-info-wrapper {
     display: flex;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
-    height: 400px;
 }
+
+.code-vector-graphic {
+    height: 200px;
+}
+
+.graphic-wrap {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+
+#dark-graphic {
+    position: absolute;
+    top: 80px;
+    right: -25px;
+}
+
 
 .topic-page-cover-cont-shadow {
     position: absolute;
@@ -168,6 +191,12 @@ li {
     background: linear-gradient(180deg,rgba(0,0,0,.2) 0,rgba(0,0,0,.15) 40%,rgba(0,0,0,.1) 70%,rgba(0,0,0,.2));
 }
 
+.cover-info {
+    width: 550px;
+    max-width: 100%;
+    padding: 20px;
+}
+
 .cover-info-logo {
     height: 90px;
     width: 90px;
@@ -177,7 +206,7 @@ li {
     color: #fff;
     font-size: 46px;
     font-weight: 700;
-    text-align: center;
+
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -214,15 +243,20 @@ li {
 }
 
 .heading-sub {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 26px;
     line-height: 30px;
+}
+
+.heading-sub-two {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
 }
 
 .heading-description {
     font-weight: 400;
     font-size: 20px;
-    text-align: center;
     line-height: 30px;
 }
 
@@ -238,8 +272,8 @@ li {
 
 .section-wrapper {
     width: 100%;
-
-    max-width: 1400px;
+    /*max-width: 1400px;*/
+    overflow: hidden;
 }
 
 .flex-row {
@@ -251,19 +285,20 @@ li {
 }
 
 .shadow {
+    -webkit-box-shadow: 0 1px 7px rgba(0,0,0,.1);
+    box-shadow: 0 1px 7px rgba(0,0,0,.1);
+}
+
+.shadow-heavy {
+    -webkit-box-shadow: 0 1px 20px rgba(0,0,0,.3);
+    box-shadow: 0 1px 20px rgba(0,0,0,.3);
+}
+
+.shadow-light {
     -webkit-box-shadow: 0 1px 7px rgba(0,0,0,.05);
     box-shadow: 0 1px 7px rgba(0,0,0,.05);
 }
 
-.shadow-light {
-    -webkit-box-shadow: 0 1px 7px rgba(0,0,0,.10);
-    box-shadow: 0 1px 7px rgba(0,0,0,.10);
-}
-
-.shadow-heavy {
-    -webkit-box-shadow: 0 1px 25px rgba(0,0,0,.70);
-    box-shadow: 0 1px 25px rgba(0,0,0,.70);
-}
 
 .offset {
     margin-bottom: 10px;
@@ -279,9 +314,12 @@ a:hover {
     color: #3D5AFE;
 }
 
+#pricing {
+    max-width: 1000px;
+}
 
 .overview {
-    max-width: 70%;
+    max-width: 900px;
     /*color: #757575;*/
     color: #616161;
 }
@@ -314,16 +352,8 @@ a:hover {
     border-radius: 4px;
     margin: 20px;
     font-size: 15px;
+    padding: 5px;
     background-color: rgba(0,0,0,.05);
-}
-
-.price-wrap {
-    min-height: 80px;
-    width: 380px;
-    background: #fff;
-    border-radius: 6px;
-    margin: 20px;
-    padding: 25px;
 }
 
 .overview-python {
@@ -473,30 +503,17 @@ h1 {
 }
 
 #bottom-block {
-    background-color: #212121;
+    background-color: #424242;
     width: 100%;
-    height: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 210px;
 }
 
-#bottom-block-content {
-    max-width: 1400px;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .box {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-#exit {
-    height: 640px;
-    background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/verne-ho-23880-unsplash.jpg);
 }
 
 .contact-enter-wrapper {
@@ -520,6 +537,7 @@ h1 {
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .basic-row {
@@ -527,34 +545,35 @@ h1 {
     align-items: center;
 }
 
-.bottom-wrapper {
-    width: 100%;
+.syllabus-icon-block {
+    margin-right: 20px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    min-width: 280px;
 }
 
-#ending-block {
-    margin-bottom: 0px;
-    height: 100%;
+.bottom-wrapper {
+    width: 100%;
 }
 
 #simon-pic {
     background-position-x: -76px;
 }
 
+.contain {
+    max-width: 1400px;
+    margin: 0 auto
+}
+
 @media only screen and (max-width: 600px) {
     .overview {
         max-width: 90% !important;
     }
-
 }
 
 
-@media only screen and (min-width: 1400px) {
-    #landing {
-        background-image: url(https://s3.amazonaws.com/stack-hack-tutoring/emile-perron-190221-unsplash.jpg);
-    }
-}
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
     #ending-block {
         flex-wrap: wrap-reverse;
     }
@@ -574,5 +593,13 @@ h1 {
     .overview-python {
         padding:  0 5px !important;
         width: 300px !important;
+    }
+
+    .graphic-wrap {
+        height: 170px !important;
+    }
+
+    .code-vector-graphic {
+        height: 170px !important;
     }
 }

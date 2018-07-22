@@ -90,29 +90,31 @@ class Navbar extends React.Component {
     render() {
         return(
             <div className="navbar" id="nav">
-                <div className="basic-row" id="nav-wrap">
-                    <img className="nav-logo"
-                         src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-7.svg" />
-                    <span className="nav-title">Stack Hack Tutoring</span>
-                </div>
-                <div id="menu-btn">
-                    <i className="fas fa-bars" id="menu-icon" />
-                </div>
-                <div className="basic-row" id="nav-item-wrapper" style={{marginRight: '20px'}}>
-                    <div className="nav-item nav-item-block" onClick={() => this.scroll('overview')}>
-                        Overview
+                <div className="navbar-inner contain">
+                    <div className="basic-row" id="nav-wrap">
+                        <img className="nav-logo"
+                             src="https://s3.amazonaws.com/stack-hack-tutoring/stack-hack-logo-7.svg" />
+                        <span className="nav-title">Stack Hack Tutoring</span>
                     </div>
-                    <div className="nav-item nav-item-block" onClick={() => this.scroll('syllabus')}>
-                        Syllabus
+                    <div id="menu-btn">
+                        <i className="fas fa-bars" id="menu-icon" />
                     </div>
-                    <div className="nav-item nav-item-block" onClick={() => this.scroll('pricing')}>
-                        Pricing
-                    </div>
-                    <div className="nav-item nav-item-block" onClick={() => this.scroll('team')}>
-                        Team
-                    </div>
-                    <div className="nav-item nav-item-block" onClick={() => this.scroll('contact')}>
-                        Contact
+                    <div className="basic-row" id="nav-item-wrapper" style={{marginRight: '20px'}}>
+                        <div className="nav-item-block box nav-item" onClick={() => this.scroll('overview')}>
+                            OVERVIEW
+                        </div>
+                        <div className="nav-item box nav-item-block" onClick={() => this.scroll('syllabus')}>
+                            SYLLABUS
+                        </div>
+                        <div className="nav-item box nav-item-block" onClick={() => this.scroll('pricing')}>
+                            PRICING
+                        </div>
+                        {/*<div className="nav-item nav-item-block" onClick={() => this.scroll('team')}>*/}
+                            {/*Team*/}
+                        {/*</div>*/}
+                        <div className="nav-item box nav-item-block" onClick={() => this.scroll('contact')}>
+                            CONTACT
+                        </div>
                     </div>
                 </div>
                 <div className="sidenav flex-col" id="menu">
@@ -128,9 +130,9 @@ class Navbar extends React.Component {
                     <div className="nav-item side" onClick={() => this.scroll('pricing')}>
                         PRICING
                     </div>
-                    <div className="nav-item side"  onClick={() => this.scroll('team')}>
-                        TEAM
-                    </div>
+                    {/*<div className="nav-item side"  onClick={() => this.scroll('team')}>*/}
+                        {/*TEAM*/}
+                    {/*</div>*/}
                     <div className="nav-item side"  onClick={() => this.scroll('contact')}>
                         CONTACT
                     </div>

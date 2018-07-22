@@ -11,8 +11,15 @@ const Syllabus = ({}) => {
         <div className="section-wrapper flex-col fill-dark" id="syllabus">
             <Scalene fill={'#fff'} className={"wide-scalene"}/>
             <div className="heading white-text">Syllabus</div>
-            <div className="heading-sub white-text" style={{margin: '20px auto 20px 40px'}}>CORE CONCEPTS</div>
-            <div className="flex-row">
+            <div className="fit-row contain">
+                <div className="heading-sub white-text" style={{margin: '20px auto 20px 40px'}}>CORE CONCEPTS</div>
+                <div className="syllabus-icon-block">
+                    <i className="far fa-file-code lrg-icon screens" />
+                    <i className="fab fa-python lrg-icon screens" />
+                    <i className="fas fa-cogs lrg-icon screens" />
+                </div>
+            </div>
+            <div className="flex-row contain">
                 <SessionItem id="s1"
                              session="Session 1"
                              title="Fundamentals I: Functions, Variables, Types, Conditional Logic"/>
@@ -34,20 +41,19 @@ const Syllabus = ({}) => {
                 <SessionItem id="s7"
                              session="Session 7"
                              title="Object-oriented Programming I"/>
-                {/*<SessionItem id="s8"*/}
-                             {/*session="Session 8"*/}
-                             {/*title="Graphs Theory: Understanding Nodes and Edges, Adjacency Lists, Adjacency Matrices"/>*/}
-
                 <SessionItem id="s8"
                              session="Session 8"
                              title="Object-oriented Programming II"/>
-                {/*<SessionItem id="s10"*/}
-                             {/*session="Session 10"*/}
-                             {/*title="Big-O, Graph Traversal Algorithms"/>*/}
             </div>
-
-            <div className="heading-sub white-text" style={{margin: '20px auto 20px 40px'}}>FULL STACK WEB DEVELOPMENT</div>
-            <div className="flex-row">
+            <div className="fit-row contain">
+                <div className="heading-sub white-text" style={{margin: '20px auto 20px 40px'}}>FULL STACK WEB DEVELOPMENT</div>
+                <div className="syllabus-icon-block">
+                    <i className="fas fa-laptop lrg-icon people"/>
+                    <i className="fas fa-code-branch lrg-icon people"/>
+                    <i className="fab fa-html5 lrg-icon people"/>
+                </div>
+            </div>
+            <div className="flex-row contain">
                 <SessionItem id="s9"
                              session="Session 9"
                              title="Version Control with Git, Github, Command-line tools"/>

@@ -28,35 +28,31 @@ class Overview extends React.Component {
         return (
             <div className="section-wrapper flex-col" id="overview">
                 <div className="heading dark-grey-text">Overview</div>
-                <div className="heading-description overview grey-text" style={{marginBottom: '60px'}}>
+                <div className="heading-description overview center-text grey-text" style={{marginBottom: '60px'}}>
                     Stack Hack combines the personalized and flexible aspect of tutoring services
                     with the structure and organization of a full computer science course. We begin with the
                     fundamentals of programming
                     and progress quickly onto more sophisticated concepts such as recursion and object-oriented
                     programming
-                    and then for the remainder of the course we learn full stack web development. The language we will
-                    be working in is{' '}
+                    and then for the remainder of the course we learn full stack web development. The primary language that
+                    we will be working in is{' '}
                     <a href="https://www.python.org/" target="_blank">
                         <strong>Python</strong>
                     </a>.
                 </div>
-                <div className="fill-dark">
+                <div className="fill-dark section-wrapper">
                     <Scalene fill={'#fff'} className={"wide-scalene"}/>
                     <div className="heading white-text">What You'll Get</div>
-                    <div className="flex-row">
-                        <Card header="VIDEOS"
+                    <div className="flex-row contain">
+                        <Card header="ONE-ON-ONE"
                               icon={<div>
-                                  <i className="fas fa-video sml-icon video offset"/>
-                                  <i className="fab fa-youtube sml-icon video"/>
+                                  <i className="fas fa-user sml-icon people offset"/>
+                                  <i className="far fa-user sml-icon people"/>
                               </div>}
-                              type={this.state.type}
 
-                              description={<div>Our students will have unlimited access to videos and exercises created
-                                  for every
-                                  topic covered in this course.
-                                  {/*These videos will improve learning by providing the students the*/}
-                                  {/*opportunity to both prepare for, as well as reinforce, what they have learned in each session.*/}
-                              </div>}/>
+                              type={this.state.type}
+                              description={<div>Our one-on-one tutoring-style teaching allows our students to
+                                  move at their own pace and get the most out of each session.</div>}/>
                         <Card header="WEB DEVELOPMENT"
                               icon={<div>
                                   <i className="fas fa-laptop sml-icon screens offset"/>
@@ -86,15 +82,20 @@ class Overview extends React.Component {
                               description={<div>We designed Stack Hack so that students can begin course sessions at any
                                   point in the summer they want, and come to sessions during the weeks
                                   where they have the time.</div>}/>
-                        <Card header="ONE-ON-ONE"
+                        <Card header="VIDEOS"
                               icon={<div>
-                                  <i className="fas fa-user sml-icon people offset"/>
-                                  <i className="far fa-user sml-icon people"/>
+                                  <i className="fas fa-video sml-icon video offset"/>
+                                  <i className="fab fa-youtube sml-icon video"/>
                               </div>}
-
                               type={this.state.type}
-                              description={<div>Our one-on-one tutoring-style teaching allows our students to
-                                  move at their own pace and get the most out of each session.</div>}/>
+
+                              description={<div>Our students will have unlimited access to videos and exercises created
+                                  for every
+                                  topic covered in this course.
+                                  {/*These videos will improve learning by providing the students the*/}
+                                  {/*opportunity to both prepare for, as well as reinforce, what they have learned in each session.*/}
+                              </div>}/>
+
                         {/*<Card header="STRATEGY"*/}
                         {/*icon={<i id="gears" className="fas fa-cogs base-icons" />}*/}
                         {/*description={<div>We teach students to think the right way while developing,*/}
@@ -105,7 +106,7 @@ class Overview extends React.Component {
                 <div className="heading dark-grey-text">Why Python?</div>
                 <div className="overview-python flex-col">
                     <div style={{marginBottom: '30px'}}>
-                        <div className="frame shadow" id="py-img-wrapper"><img
+                        <div className="frame" id="py-img-wrapper"><img
                             src="https://s3.amazonaws.com/stack-hack-tutoring/python.png" id="py-img"/></div>
                         <div className="heading-description grey-text python">Python is a powerful and versatile language that can
                             be used for just
@@ -125,8 +126,8 @@ class Overview extends React.Component {
                             <strong> learning to think and reason in a computational way.</strong></div>
                     </div>
                     <div className="flex-row">
-                        <div className="frame code-wrap">
-                            <code>
+                        <div className="frame code-wrap box">
+                            <code style={{lineHeight: '22px'}}>
                                 <i className="e-blue">def</i> <span className="e-green">compute_squares</span>(<i
                                 className="e-orange">numbers</i>):
                                 <br/>

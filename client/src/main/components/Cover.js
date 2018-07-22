@@ -1,4 +1,5 @@
 import React from 'react';
+import path from 'path';
 
 const Cover = ({}) => {
 
@@ -18,11 +19,21 @@ const Cover = ({}) => {
                     {/*<span className="cover-info-title">Stack Hack Tutoring</span
                 >*/}
                 {/*</div>*/}
-                <div className="cover-info-wrapper">
-                    <div style={{maxWidth: '550px'}}>
+                <div className="cover-info-wrapper flex-row" style={{alignItems: 'normal'}}>
+                    <div className="cover-info box">
                         <div className="cover-info-title">Decode the Code with Stack Hack</div>
                         <div className="heading-description faint-text" >
-                            A Python programming and Full-Stack Web Development summer course
+                            A Python programming and Full-Stack Web Development course
+                        </div>
+                    </div>
+                    <div style={{position: 'relative', height: '350px'}}>
+                        <div className="shadow-heavy graphic-wrap">
+                            <img src="https://s3.amazonaws.com/stack-hack-tutoring/coding-vector-light.svg"
+                                 className="code-vector-graphic"/>
+                        </div>
+                        <div className="shadow-heavy graphic-wrap" id="dark-graphic">
+                            <img src="https://s3.amazonaws.com/stack-hack-tutoring/coding-vector.svg"
+                                 className="code-vector-graphic"/>
                         </div>
                     </div>
                 </div>

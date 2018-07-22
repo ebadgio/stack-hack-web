@@ -38,14 +38,12 @@ class App extends React.Component {
                                                  id="main-wrapper">
                     <Navbar />
                     <Cover />
-                    <svg className="wide-scalene" preserveAspectRatio="none" viewBox=" 0 0 100 100">
-                        <polygon className="fill-light" points="100 0 0 0 0 50" />
-                    </svg>
+                    <Scalene fill={'#3884FF'} className={"wide-scalene"}/>
                     <Overview />
                     <Syllabus/>
                     <Scalene fill={'#183055'} className={"wide-scalene"}/>
                     <Pricing />
-                    <Team />
+                    {/*<Team />*/}
                     <Bottom />
                 </div>} />
             </Switch>

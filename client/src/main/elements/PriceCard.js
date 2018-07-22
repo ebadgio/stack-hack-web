@@ -1,18 +1,16 @@
 import React from 'react';
 
-const PriceCard = ({track, price, statement, details, style}) => {
+// Elements
+import Separator from "./Separator";
+
+const PriceCard = ({option, price, details, style}) => {
 
     return (
-        <div className="price-wrap shadow box" style={style}>
-            <div className="heading-description" style={{maxWidth: '100%', color: '#616161'}}>
-                <strong style={{fontSize: '24px', color: '#424242'}}>{track}</strong>
-                <br />
-                <br />
-                <div style={{color: '#536dfe'}}><strong>Price</strong>: {price}</div>
-                <br />
-                {statement}
-                {details}
-            </div>
+        <div className="price-wrap box" style={style}>
+            <div className="heading-sub dark-grey-text mb-5">{option}</div>
+            <div className="heading-sub-two mb-5" style={{color: '#3884FF'}}>Price : {price}</div>
+            <div className="heading-description grey-text mb-10" style={{textAlign: 'left'}}>{details}</div>
+            <Separator width="150px" color="#1de9b6"/>
         </div>
     );
 };
