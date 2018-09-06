@@ -28,10 +28,10 @@ class App extends React.Component {
     render() {
         return(
             <Switch>
-                <Route path="/materials"
-                       render={() => <Materials />} />
-                <Route path="/solutions"
-                       render={() => <Solutions />} />
+                {/*<Route path="/materials"*/}
+                       {/*render={() => <Materials />} />*/}
+                {/*<Route path="/solutions"*/}
+                       {/*render={() => <Solutions />} />*/}
                 <Route path="/privacy-policy"
                        render={() => <Privacy />} />
                 <Route render={() => <div className="flex-col fill"
