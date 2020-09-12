@@ -69,3 +69,6 @@ env.sh
 
 .DS_Store
 build/.DS_Store
+
+now.json
+.vercel
