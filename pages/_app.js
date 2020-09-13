@@ -8,7 +8,6 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta charset="UTF-8" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no" />
         <meta name="description" content="Learn to code with Stack Hack! We combine the personalized and flexible aspect of tutoring services
